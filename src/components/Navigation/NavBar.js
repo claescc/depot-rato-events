@@ -46,16 +46,16 @@ export default function NavBar() {
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <CustomLink to="/home" className="text-lg hover:text-mint-200 ">
+              <CustomLink to="/home" className="text-lg  ">
                 Home
               </CustomLink>
-              <CustomLink to="/calendar" className="text-lg hover:text-mint-200">
+              <CustomLink to="/calendar" className="text-lg ">
                 Calendar
               </CustomLink>
-              <CustomLink to="/gallery" className="text-lg hover:text-mint-200">
+              <CustomLink to="/gallery" className="text-lg ">
                 Gallery
               </CustomLink>
-              <CustomLink to="/contact" className="text-lg hover:text-mint-200">
+              <CustomLink to="/contact" className="text-lg ">
                 Contact
               </CustomLink>
             </ul>
@@ -66,18 +66,14 @@ export default function NavBar() {
   )
 }
 
-// you boycots my classname of li-itemsn fix this shaize
-// exterbal link shnizzle no work
 // make seperate link component yiu messy twat
 
 export function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
   return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
+    <li {...props} className={isActive ? "active hover:text-mint-200" : "hover:text-mint-200"}>
+      <Link to={to}>{children}</Link>
     </li>
   )
 }
