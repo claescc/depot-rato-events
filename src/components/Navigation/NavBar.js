@@ -1,14 +1,15 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+// import classNames from "classnames"
 import { useState } from "react"
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false)
   return (
-    <nav className="w-full text-white bg-green-500 shadow">
+    <nav className="w-full  bg-green-500 shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="/" className="text-white">
+            <Link to="/home" className="text-white">
               <h2 className="text-2xl">Depot Rato Events</h2>
             </Link>
 
@@ -46,7 +47,7 @@ export default function NavBar() {
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <CustomLink to="/home" className="text-lg  ">
+              <CustomLink to="/home" className="text-lg ">
                 Home
               </CustomLink>
               <CustomLink to="/calendar" className="text-lg ">
@@ -66,13 +67,16 @@ export default function NavBar() {
   )
 }
 
-// make seperate link component yiu messy twat
-
 export function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+  // get all current classes out of props and create concat of all classes
+  const navClass = "text-white hover:text-mint-200 " + props.className
+  const navClassActive = "active text-mint-100 hover:text-mint-200 " + props.className
+
   return (
-    <li {...props} className={isActive ? "active hover:text-mint-200" : "hover:text-mint-200"}>
+    <li className={isActive ? navClassActive : navClass}>
       <Link to={to}>{children}</Link>
     </li>
   )

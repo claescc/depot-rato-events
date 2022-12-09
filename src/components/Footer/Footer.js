@@ -8,10 +8,10 @@ export default function Footer() {
         <div>
           <h2 className="mb-4 text-sm font-semibold uppercase">Group</h2>
           <ul className="text-sm font-light">
-            <CustomLink to="/home" className="hover:text-mint-200 block pb-2">
+            <CustomLink to="/home" className="block pb-2">
               About
             </CustomLink>
-            <CustomLink to="/home" className="hover:text-mint-200 block pb-2">
+            <CustomLink to="/" className="block pb-2">
               Join Us
             </CustomLink>
           </ul>
@@ -19,10 +19,10 @@ export default function Footer() {
         <div>
           <h2 className="mb-4 text-sm font-semibold uppercase">Events</h2>
           <ul className="text-sm font-light">
-            <CustomLink to="/calendar" className="hover:text-mint-200 block pb-2">
+            <CustomLink to="/calendar" className="block pb-2">
               Calendar
             </CustomLink>
-            <CustomLink to="/gallery" className="hover:text-mint-200 block pb-2">
+            <CustomLink to="/gallery" className="block pb-2">
               Gallery
             </CustomLink>
           </ul>
@@ -34,14 +34,14 @@ export default function Footer() {
               <a
                 href="https://www.facebook.com/groups/depotratodurabrikcommunity"
                 target="_blank"
-                className="hover:text-mint-200 block pb-2"
+                className=" block pb-2"
                 rel="noreferrer"
               >
                 Facebook
               </a>
             </li>
 
-            <CustomLink to="/contact" className="hover:text-mint-200 block pb-2">
+            <CustomLink to="/contact" className=" block pb-2">
               Contact
             </CustomLink>
           </ul>
@@ -49,11 +49,11 @@ export default function Footer() {
         <div>
           <h2 className="mb-4 text-sm font-semibold uppercase">Legal</h2>
           <ul className="text-sm font-light">
-            <CustomLink to="/" className="hover:text-mint-200 block pb-2">
+            <CustomLink to="/" className="block pb-2">
               Privacy Policy
             </CustomLink>
 
-            <CustomLink to="/" className="hover:text-mint-200 block pb-2">
+            <CustomLink to="/" className="block pb-2">
               Terms &amp; Conditions
             </CustomLink>
           </ul>
