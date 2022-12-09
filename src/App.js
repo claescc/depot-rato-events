@@ -2,8 +2,8 @@ import Home from "./modules/pages/Home"
 import Calendar from "./modules/pages/Calendar"
 import Gallery from "./modules/pages/Gallery"
 import Contact from "./modules/pages/Contact"
-// import Footer from "./Footer"
-import NavBar from "./NavBar"
+import NavBar from "./components/Navigation/NavBar"
+import Footer from "./components/Footer/Footer"
 import { Route, Routes } from "react-router-dom"
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
