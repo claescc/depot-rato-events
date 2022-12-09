@@ -66,6 +66,10 @@ export default function NavBar() {
   )
 }
 
+// you boycots my classname of li-itemsn fix this shaize
+// exterbal link shnizzle no work
+// make seperate link component yiu messy twat
+
 export function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })

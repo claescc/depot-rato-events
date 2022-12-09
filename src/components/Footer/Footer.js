@@ -30,7 +30,14 @@ export default function Footer() {
         <div>
           <h2 className="mb-4 text-sm font-semibold uppercase">Social Media</h2>
           <ul className="text-sm font-light">
-            <CustomLink to="/home" className="hover:text-mint-200 block pb-2">
+
+        {/* This linky schnizzle no worki - routi fixi */}
+
+            <CustomLink
+              to={{ pathname: "https://www.facebook.com/groups/depotratodurabrikcommunity" }}
+              target="_blank"
+              className="hover:text-mint-200 block pb-2"
+            >
               Facebook
             </CustomLink>
             <CustomLink to="/contact" className="hover:text-mint-200 block pb-2">
