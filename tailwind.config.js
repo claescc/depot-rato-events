@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       white: "#fff",
       black: "#000",
-      red:"#f44336",
+      red: "#f44336",
       "green-800": "#081411",
       "green-700": "#0F2723",
       "green-500": "#1C463E",
@@ -14,6 +14,10 @@ module.exports = {
       "mint-400": "#4FB286",
       "mint-200": "#50FFB1",
       "mint-100": "#BDF8E6",
+    },
+    backgroundImage: {
+      homehero: "url('../../assets/images/bannerThinDark.png')",
+      drelogo: "url('../../assets/images/whitedrelogo.png')",
     },
     extend: {},
   },

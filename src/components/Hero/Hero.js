@@ -1,13 +1,13 @@
 // import React from "react"
-import homeHero from "../../assets/images/DreCommunityBanner.jpeg"
 
 export default function Hero() {
-  // get img out of db and do dynamic
-  // const [heroHome] = databate{}
   return (
-    <div className="w-full flex">
-      <img alt="Dre community banner" src={homeHero} className="w-full h-auto " />
-      {/* <img alt={heroHome.imageAltText} src={hero.HomeImgRef} className="w-full h-auto max-w-sm " /> */}
+    <div className="w-full flex justify-center bg-homehero bg-center bg-cover">
+      <div className="text-2xl py-16 sm:text-4xl font-light text-white tracking-widest h-64">
+        <div className="p-4">DEPOT RATO EVENTS</div>
+        <hr></hr>
+        <div className="p-4">MAKE TIME FOR FUN</div>
+      </div>
     </div>
   )
 }
