@@ -1,64 +1,86 @@
-import { useState, useRef } from "react"
-import { useEffect } from "react"
+import { useState } from "react"
+import { db } from "../../firebaseConfig"
+import { addDoc, collection } from "firebase/firestore"
 
 const ContacthtmlForm = () => {
-  const [name, setName] = useState("")
-  const renderCount = useRef(0)
+  const [firstname, setFirstname] = useState()
+  const [lastname, setLastname] = useState()
+  const [phone, setPhone] = useState()
+  const [email, setEmail] = useState()
+  const [message, setMessage] = useState()
 
-  useEffect(() => {
-    renderCount.current = renderCount.current + 1 // current is only a small part of a larger object, ref correctly to a specific part not the entire obj
-  })
+  const userCollectionRef = collection(db, "contactdata")
+
+  const handleSubmit = event => {
+    event.preventDefault()
+
+    addDoc(userCollectionRef, {
+      firstname: firstname,
+      lastname: lastname,
+      phone: phone,
+      email: email,
+      message: message,
+    })
+      .then(() => {
+        alert("Contactform Submitted Successfully!")
+      })
+      .catch(error => {
+        alert(error.message)
+      })
+
+    setFirstname("")
+    setLastname("")
+    setPhone("")
+    setEmail("")
+    setMessage("")
+  }
 
   return (
-    <section className="body-font relative">
+    <section className="body-font py-8 relative">
       <div className="container px-5 mx-auto">
-        <div className="text-red">
-          <div>name:{name}</div>
-          <div>renderCount:{renderCount.current}</div>
-        </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-wrap -m-2">
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label htmlFor="name" className="leading-7 text-sm text-green-500">
+                <label htmlFor="firstname" className="leading-7 text-sm text-green-500">
                   Firstname
                 </label>
                 <input
-                  value={name}
-                  onChange={e => setName(e.target.value)}
+                  value={firstname}
+                  onChange={e => setFirstname(e.target.value)}
                   type="text"
-                  id="name"
-                  name="name"
+                  id="firstname"
+                  name="firstname"
                   className="w-full rounded border border-green-500 focus:border-mint-200 text-base outline-none text-grey-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label htmlFor="name" className="leading-7 text-sm text-green-500">
+                <label htmlFor="lastname" className="leading-7 text-sm text-green-500">
                   Lastname
                 </label>
                 <input
-                  value=""
-                  onChange=""
+                  value={lastname}
+                  onChange={e => setLastname(e.target.value)}
                   type="text"
-                  id="name"
-                  name="name"
+                  id="lastname"
+                  name="lastname"
                   className="w-full rounded border border-green-500 focus:border-mint-200 text-base outline-none text-grey-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label htmlFor="name" className="leading-7 text-sm text-green-500">
+                <label htmlFor="phone" className="leading-7 text-sm text-green-500">
                   Phone
                 </label>
                 <input
-                  value=""
-                  onChange=""
+                  value={phone}
+                  onChange={e => setPhone(e.target.value)}
                   type="text"
-                  id="name"
-                  name="name"
+                  id="phone"
+                  name="phone"
                   className="w-full rounded border border-green-500 focus:border-mint-200 text-base outline-none text-grey-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
@@ -69,6 +91,8 @@ const ContacthtmlForm = () => {
                   Email
                 </label>
                 <input
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
                   type="email"
                   id="email"
                   name="email"
@@ -82,6 +106,8 @@ const ContacthtmlForm = () => {
                   Message
                 </label>
                 <textarea
+                  value={message}
+                  onChange={e => setMessage(e.target.value)}
                   id="message"
                   name="message"
                   className="w-full rounded border border-green-500 focus:border-mint-200 h-32 text-base outline-none text-grey-400 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
@@ -89,7 +115,10 @@ const ContacthtmlForm = () => {
               </div>
             </div>
             <div className="p-2 w-full">
-              <button className="flex mx-auto text-white hover:text-green-500 bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-mint-200 rounded text-lg">
+              <button
+                onClick={handleSubmit}
+                className="flex mx-auto text-white hover:text-green-500 bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-mint-200 rounded text-lg"
+              >
                 Submit
               </button>
             </div>
