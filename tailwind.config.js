@@ -18,6 +18,7 @@ module.exports = {
     backgroundImage: {
       homehero: "url('../../assets/images/bannerThinDark.png')",
       drelogo: "url('../../assets/images/whitedrelogo.png')",
+      emptystate: "url('../../assets/images/emptystate.png')",
     },
     extend: {},
   },

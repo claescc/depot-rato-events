@@ -3,7 +3,7 @@ import { CustomLink } from "../Navigation/NavBar"
 
 export default function Footer() {
   return (
-    <footer className="bg-green-700 text-white fixed bottom-0 left-0 right-0">
+    <footer className="bg-green-700 text-white ">
       <div className="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
         <div>
           <h2 className="mb-4 text-sm font-semibold uppercase">Group</h2>
