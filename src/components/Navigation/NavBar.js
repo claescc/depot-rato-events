@@ -1,15 +1,17 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
-// import classNames from "classnames"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
+import LanguageSelect from "../LanguageSelect/LanguageSelect"
+
 
 export default function NavBar() {
+  const { t } = useTranslation()
   const [navbar, setNavbar] = useState(false)
   return (
     <nav className="w-full  bg-green-500 shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-
             <a href="/home" className="bg-drelogo bg-center block bg-cover">
               <div className="h-10 w-28">&nbsp;</div>
             </a>
@@ -49,18 +51,20 @@ export default function NavBar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <CustomLink to="/home" className="text-lg ">
-                Home
+                {t("navigation.home")}
               </CustomLink>
               <CustomLink to="/calendar" className="text-lg ">
-                Calendar
+              {t("navigation.calendar")}
               </CustomLink>
               <CustomLink to="/gallery" className="text-lg ">
-                Gallery
+              {t("navigation.gallery")}
               </CustomLink>
               <CustomLink to="/contact" className="text-lg ">
-                Contact
+              {t("navigation.contact")}
               </CustomLink>
+              <LanguageSelect />
             </ul>
+            
           </div>
         </div>
       </div>

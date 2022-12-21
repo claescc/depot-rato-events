@@ -1,0 +1,54 @@
+{
+  "languages": {
+    "language": "Taal",
+    "dutch": "Nederlands",
+    "english": "Engels"
+  },
+  "navigation": {
+    "home": "Home",
+    "calendar": "Kalender",
+    "gallery": "Gallerij",
+    "contact": "Contact"
+  },
+  "footer": {
+    "group": "Groep",
+    "events": "Evenementen",
+    "socialmedia": "Sociale Media",
+    "legal": "Wetgeving",
+    "about": "Over Ons",
+    "joinus": "Lid Worden",
+    "calendar": "Kalender",
+    "gallery": "Gallerij",
+    "facebook": "Facebook",
+    "contact": "Contact",
+    "privacypolicy": "Privacy wetgeving",
+    "termsandconditions": "Gebruiksvoorwaarden",
+    "claescc": "CLAESCC PRODUCTIONS. All Rights Reserved."
+  },
+  "home": {
+    "dre": "Depot Rato Events",
+    "dretxt": "Depot Rato is een idee gegroeid..",
+    "neighbourhood": "De Buurt",
+    "neightxt": "De buurt is omgemaakt met inwoners van Muizen..",
+    "events": "Evenementen",
+    "eventtxt": "Er zijn al verschillende soorten evenementen geweest...."
+  },
+  "hero": {
+    "dre": "Depot Rato Events",
+    "dreline": "Maak tijd voor plezier"
+  },
+  "contact": {
+    "us": "Contacteer Ons",
+    "infotxt": "Voor vragen, klachten of leuke ideeën...",
+    "joinus": "Wordt Lid",
+    "jointxt": "Wil je mee deeluitmaken van onze community..."
+  },
+  "form": {
+    "firstname": "Voornaam",
+    "lastname": "Achternaam",
+    "phone": "Telefoon",
+    "email": "Emailadres",
+    "message": "Bericht",
+    "submit": "Versturen"
+  }
+}

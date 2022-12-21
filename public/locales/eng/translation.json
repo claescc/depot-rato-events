@@ -1,0 +1,54 @@
+{
+  "languages": {
+    "language": "Language",
+    "dutch": "Dutch",
+    "english": "English"
+  },
+  "navigation": {
+    "home": "Home",
+    "calendar": "Calendar",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "footer": {
+    "group": "Group",
+    "events": "Events",
+    "socialmedia": "Social Media",
+    "legal": "Legal",
+    "about": "About",
+    "joinus": "Join Us",
+    "calendar": "Calendar",
+    "gallery": "Gallery",
+    "facebook": "Facebook",
+    "contact": "Contact",
+    "privacypolicy": "Privacy Policy",
+    "termsandconditions": "Terms &amp; Conditions",
+    "claescc": "CLAESCC PRODUCTIONS. All Rights Reserved."
+  },
+  "home": {
+    "dre": "Depot Rato Events",
+    "dretxt": "Depot Rato Events is the result of a small neighbourhood idea of a handful of residents to bring an entire neighbourhood together. This by holding small gatherings for various occasions where residents could drink and eat as they mingled amongst their fellow residents. This idea has now grown into a bigger community where now events are organized on a bigger scale in our growing neighbourhood.",
+    "neighbourhood": "The Neighbourhood",
+    "neightxt": "The community is made up of residents in Muizen, Mechelen who reside in and around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, etc. Anyone who lives in the vicinity and would like to be part of the community is more than welcome to join us in any future events or gatherings.",
+    "events": "Events",
+    "eventtxt": "There has been a variety of events and gathers held these past years some of them at Depot Rato itself while other events have been offsite. From festive or recreational walks in parks to onsite Newyear&apos;s drink, Easter or Summer BBQ gatherings, DRE likes to switch it up so that young and old find something worth attending. More creative events are in the making and if you have a great idea do let us know or join our team to make a difference."
+  },
+  "hero": {
+    "dre": "Depot Rato Events",
+    "dreline": "Make time for fun"
+  },
+  "contact": {
+    "us": "Contact Us",
+    "infotxt": " For any questions, complaints or fun ideas for new future initiatives please use our contact details or fill in our contact form below. We will do our best to help you further with any inquieries.",
+    "joinus": "Join Us",
+    "jointxt": "The community is made up of residents in Muizen, Mechelen who reside in and around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, etc. Anyone who lives in the vicinity and would like to be part of the community is more than welcome to join us in any future events or gatherings."
+  },
+  "form": {
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
+  }
+}
