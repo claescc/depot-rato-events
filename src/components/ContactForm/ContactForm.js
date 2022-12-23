@@ -1,9 +1,11 @@
-// import { useState } from "react"
-import { db } from "../../firebaseConfig"
-import { addDoc, collection } from "firebase/firestore"
+import { useRef } from "react"
+import emailjs from "@emailjs/browser"
+// import { db } from "../../firebaseConfig"
+// import { addDoc, collection } from "firebase/firestore"
 import { useTranslation } from "react-i18next"
 import { useForm } from "react-hook-form"
 import TextField from "./TextField"
+import { mail } from "../../emailConifg"
 
 const ContacthtmlForm = () => {
   const { t } = useTranslation()
@@ -14,16 +16,12 @@ const ContacthtmlForm = () => {
     handleSubmit,
   } = useForm()
 
-  const userCollectionRef = collection(db, "contactdata")
+  //   const userCollectionRef = collection(db, "contactdata")
+  const form = useRef()
 
   const onSubmit = data => {
-    addDoc(userCollectionRef, {
-      firstname: data.firstname,
-      lastname: data.lastname,
-      phone: data.phone,
-      email: data.email,
-      message: data.message,
-    })
+    emailjs
+      .sendForm(mail.serviceid, mail.templateid, form.current, mail.publickey)
       .then(() => {
         alert("Contactform Submitted Successfully!")
         reset()
@@ -31,10 +29,25 @@ const ContacthtmlForm = () => {
       .catch(error => {
         alert(error.message)
       })
+
+    // addDoc(userCollectionRef, {
+    //   firstname: data.firstname,
+    //   lastname: data.lastname,
+    //   phone: data.phone,
+    //   email: data.email,
+    //   message: data.message,
+    // })
+    //   .then(() => {
+    //     alert("Contactform Submitted Successfully!")
+    //     reset()
+    //   })
+    //   .catch(error => {
+    //     alert(error.message)
+    //   })
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="body-font py-8 relative">
+    <form ref={form} onSubmit={handleSubmit(onSubmit)} className="body-font py-8 relative">
       <div className="container px-5 mx-auto">
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-wrap -m-2">
@@ -54,6 +67,7 @@ const ContacthtmlForm = () => {
                   {t("form.message")} <span className="text-red pl-1 after:content-['*']"></span>
                 </label>
                 <textarea
+                  name="message"
                   {...register("message", { required: true })}
                   aria-invalid={errors.message ? "true" : "false"}
                   className="w-full rounded border border-green-500 focus:border-mint-200 h-52 text-base outline-none text-grey-400 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
