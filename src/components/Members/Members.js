@@ -16,9 +16,14 @@ const Members = () => {
       </div>
       <div className="flex flex-row flex-wrap justify-center">
         {docs?.map(doc => (
-          <div key={doc.id} className="h-28 w-32 m-4 flex flex-col">
-            <img className="h-24 w-24 mx-auto rounded-full " src={doc.avatar} alt={doc.firstname}></img>
-            <div className="text-xs p-1 mx-auto">
+          <div key={doc.firstname} className="h-28 w-32 m-4 flex flex-col">
+            <img
+              key={doc.avatar}
+              className="h-24 w-24 mx-auto rounded-full "
+              src={doc.avatar}
+              alt={doc.firstname}
+            ></img>
+            <div key={doc.lastname} className="text-xs p-1 mx-auto">
               {doc.firstname} {doc.lastname}
             </div>
           </div>
