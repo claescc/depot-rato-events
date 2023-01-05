@@ -7,6 +7,9 @@ const Members = () => {
   const { t } = useTranslation()
   const query = collection(db, "members")
   const [docs, loading] = useCollectionData(query)
+  console.log(docs)
+
+
 
   return (
     <div className="text-green-500 mx-auto max-w-3xl pb-12">
