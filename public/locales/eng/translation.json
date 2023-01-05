@@ -20,6 +20,7 @@
     "calendar": "Calendar",
     "gallery": "Gallery",
     "facebook": "Facebook",
+    "instagram": "Instagram",
     "contact": "Contact",
     "privacypolicy": "Privacy Policy",
     "termsandconditions": "Terms & Conditions",
@@ -41,7 +42,8 @@
     "us": "Contact Us",
     "infotxt": " For any questions, complaints or fun ideas for new future initiatives please use our contact details or fill in our contact form below. We will do our best to help you further with any inquieries.",
     "joinus": "Join Us",
-    "jointxt": "The community is made up of residents in Muizen, Mechelen who reside in and around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, etc. Anyone who lives in the vicinity and would like to be part of the community is more than welcome to join us in any future events or gatherings."
+    "jointxt": "The community is made up of residents in Muizen, Mechelen who reside in and around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, etc. Anyone who lives in the vicinity and would like to be part of the community is more than welcome to join us in any future events or gatherings.",
+    "ourteam": "Our Team"
   },
   "form": {
     "firstname": "Firstname",

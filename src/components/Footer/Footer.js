@@ -38,6 +38,11 @@ export default function Footer() {
                 {t("footer.facebook")}
               </a>
             </li>
+            <li className="text-white hover:text-mint-200 block pb-2">
+              <a href="https://www.instagram.com/depotratoevents/" target="_blank" rel="noreferrer">
+                {t("footer.instagram")}
+              </a>
+            </li>
 
             <CustomLink to="/contact" className=" block pb-2">
               {t("footer.contact")}

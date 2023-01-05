@@ -1,7 +1,5 @@
 import { useRef } from "react"
 import emailjs from "@emailjs/browser"
-// import { db } from "../../firebaseConfig"
-// import { addDoc, collection } from "firebase/firestore"
 import { useTranslation } from "react-i18next"
 import { useForm } from "react-hook-form"
 import TextField from "./TextField"
@@ -16,7 +14,6 @@ const ContacthtmlForm = () => {
     handleSubmit,
   } = useForm()
 
-  //   const userCollectionRef = collection(db, "contactdata")
   const form = useRef()
 
   const onSubmit = data => {
@@ -29,21 +26,6 @@ const ContacthtmlForm = () => {
       .catch(error => {
         alert(error.message)
       })
-
-    // addDoc(userCollectionRef, {
-    //   firstname: data.firstname,
-    //   lastname: data.lastname,
-    //   phone: data.phone,
-    //   email: data.email,
-    //   message: data.message,
-    // })
-    //   .then(() => {
-    //     alert("Contactform Submitted Successfully!")
-    //     reset()
-    //   })
-    //   .catch(error => {
-    //     alert(error.message)
-    //   })
   }
 
   return (
@@ -64,7 +46,8 @@ const ContacthtmlForm = () => {
             <div className="p-2 w-full">
               <div className="relative">
                 <label htmlFor="message" className="leading-7 text-sm text-green-500">
-                  {t("form.message")} <span className="text-red pl-1 after:content-['*']"></span>
+                  {t("form.message")}
+                  <span className="text-red pl-1 after:content-['*']"></span>
                 </label>
                 <textarea
                   name="message"

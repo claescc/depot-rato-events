@@ -20,6 +20,7 @@
     "calendar": "Kalender",
     "gallery": "Gallerij",
     "facebook": "Facebook",
+    "instagram": "Instagram",
     "contact": "Contact",
     "privacypolicy": "Privacy wetgeving",
     "termsandconditions": "Gebruiksvoorwaarden",
@@ -41,7 +42,8 @@
     "us": "Contacteer Ons",
     "infotxt": "Voor vragen, klachten of leuke ideeën...",
     "joinus": "Wordt Lid",
-    "jointxt": "Wil je mee deeluitmaken van onze community..."
+    "jointxt": "Wil je mee deeluitmaken van onze community...",
+    "ourteam": "Ons Team"
   },
   "form": {
     "firstname": "Voornaam",
