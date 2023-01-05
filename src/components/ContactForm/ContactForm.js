@@ -19,8 +19,8 @@ const ContacthtmlForm = () => {
   const recaptchaRef = React.createRef()
   // testing in localhost
   //const RECAPKEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-  // Production key
-  const RECAPKEY = "6LfW-dIjAAAAAM1dkTxQaLYPUxW2mpWoL2xWrV1K"
+  // Production key v2
+  const RECAPKEY = process.env.REACT_APP_DRE_RECAPTCHA_SITEKEY
 
   const [captchaIsDone, setCaptchaDone] = useState(false)
 
