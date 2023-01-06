@@ -25,7 +25,6 @@ const ContacthtmlForm = () => {
   const [captchaIsDone, setCaptchaDone] = useState(false)
 
   function handleCaptcha() {
-    console.log("changed")
     setCaptchaDone(true)
   }
 
