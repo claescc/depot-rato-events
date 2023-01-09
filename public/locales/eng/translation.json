@@ -32,7 +32,7 @@
     "neighbourhood": "The Neighbourhood",
     "neightxt": "The community is made up of residents in Muizen, Mechelen who reside in and around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, etc. Anyone who lives in the vicinity and would like to be part of the community is more than welcome to join us in any future events or gatherings.",
     "events": "Events",
-    "eventtxt": "There has been a variety of events and gathers held these past years some of them at Depot Rato itself while other events have been offsite. From festive or recreational walks in parks to onsite Newyear&apos;s drink, Easter or Summer BBQ gatherings, DRE likes to switch it up so that young and old find something worth attending. More creative events are in the making and if you have a great idea do let us know or join our team to make a difference."
+    "eventtxt": "There has been a variety of events and gathers held these past years some of them at Depot Rato itself while other events have been offsite. From festive or recreational walks in parks to onsite Newyear's drink, Easter or Summer BBQ gatherings, DRE likes to switch it up so that young and old find something worth attending. More creative events are in the making and if you have a great idea do let us know or join our team to make a difference."
   },
   "hero": {
     "dre": "Depot Rato Events",
@@ -52,5 +52,11 @@
     "email": "Email",
     "message": "Message",
     "submit": "Send"
+  },
+  "events": {
+    "upcoming": "First Upcoming Event",
+    "newyear": "New Year's Drink",
+    "nydate":"When: Saturday 14/01/2023 at 18:00h",
+    "location":"Location: square Depot Rato"
   }
 }

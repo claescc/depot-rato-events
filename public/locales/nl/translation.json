@@ -52,5 +52,11 @@
     "email": "Emailadres",
     "message": "Bericht",
     "submit": "Versturen"
+  },
+  "events": {
+    "upcoming": "Eerst Volgende Event",
+    "newyear": "Nieuwjaarsdrink",
+    "nydate": "Wanneer: Zaterdag 14/01/2023 om 18:00u",
+    "location": "Locatie: binnenplein Depot Rato"
   }
 }

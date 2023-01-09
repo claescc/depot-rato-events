@@ -1,4 +1,5 @@
 import Hero from "../../components/Hero/Hero"
+import UpcomingEvent from "../../components/UpcomingEvent/UpcomingEvent"
 import Welcome from "../../components/Welcome/Welcome"
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <Welcome />
+      <UpcomingEvent />
     </>
   )
 }
