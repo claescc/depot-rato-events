@@ -57,6 +57,17 @@
     "upcoming": "Eerst Volgende Event",
     "newyear": "Nieuwjaarsdrink",
     "nydate": "Wanneer: Zaterdag 14/01/2023 om 18:00u",
-    "location": "Locatie: binnenplein Depot Rato"
+    "location": "Locatie: binnenplein Depot Rato",
+    "description": "Breng je sjaal en handschoenen en vier met je buurtjes het nieuwejaar. In onze grote tent zal je drankjes en snacks terugvinden terwijl jij je kan opwarmen aan onze vuurtjes of door te dansen.",
+    "easter": "Paasfeest",
+    "easterdate": "02/04/2022",
+    "halloween": "Najaarswandeling & Halloween Feest",
+    "halloweendate": "29/10/2022",
+    "bbq": "Zomer BBQ",
+    "bbqdate": "12/06/2022"
+  },
+  "calendar": {
+    "all": "Al Onze Evenementen",
+    "allinfo": "Een volledige collectie van al onze evenementen. We proberen de datums steeds hetzelfde te houden voor maximale aanwezigeheid. Er zullen in de toekomst nog nieuwe initiativen toegevoegd worden. Heb jij een leuk idee? Laat het ons dan weten!"
   }
 }

@@ -56,7 +56,18 @@
   "events": {
     "upcoming": "First Upcoming Event",
     "newyear": "New Year's Drink",
-    "nydate":"When: Saturday 14/01/2023 at 18:00h",
-    "location":"Location: square Depot Rato"
+    "nydate": "When: Saturday 14/01/2023 at 18:00h",
+    "location": "Location: square Depot Rato",
+    "description": "Bring your scarf and mittens and join us in celebrating the new year with your fellow neighbours. In our big tent you will find beverages and snacks while you warm yourself at a fire or by dancing.",
+    "easter": "Easter Celebration",
+    "easterdate": "02/04/2022",
+    "halloween": "Autum walk & Halloween Party",
+    "halloweendate": "29/10/2022",
+    "bbq": "Summer BBQ",
+    "bbqdate": "12/06/2022"
+  },
+  "calendar": {
+    "all": "All Our Events",
+    "allinfo": "A collection of all our events. We try to keep the dates the same each year to maximise attendance. More initiatives will be added in the future. Do you have a good idea? let us know!"
   }
 }

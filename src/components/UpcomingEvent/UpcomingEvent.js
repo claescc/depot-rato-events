@@ -28,7 +28,6 @@ const UpcomingEvent = () => {
           return obj
         }),
       )
-      console.log(imageListItems)
     }
 
     fetch()
@@ -47,6 +46,7 @@ const UpcomingEvent = () => {
               <div className="pt-4 sm:pt-0 font-bold ">{t("events.newyear")}</div>
               <div className="pt-4">{t("events.nydate")}</div>
               <div className="pt-4">{t("events.location")}</div>
+              <div className="pt-4">{t("events.description")}</div>
             </div>
           </div>
         )}
