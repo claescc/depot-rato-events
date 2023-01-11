@@ -19,7 +19,7 @@ const Members = () => {
           <div key={doc.firstname} className="h-28 w-32 m-4 flex flex-col">
             <img
               key={doc.avatar}
-              className="h-24 w-24 mx-auto rounded-full "
+              className="max-h-24 max-w-24 mx-auto rounded-full "
               src={doc.avatar}
               alt={doc.firstname}
             ></img>
