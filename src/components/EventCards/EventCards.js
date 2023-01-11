@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { useEffect, useState, useMemo } from "react"
-import { ref, listAll, getDownloadURL, getStorage, getMetadata } from "firebase/storage"
-import { v4 } from "uuid"
+import { ref, getStorage } from "firebase/storage"
+import { fetchStorage } from "../../api/fetchStorage"
 
 const EventCards = () => {
   const { t } = useTranslation()
@@ -11,20 +11,7 @@ const EventCards = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      const imageList = await listAll(imageListRef)
-      const imageListItems = await Promise.all(
-        imageList.items.map(async item => {
-          const url = await getDownloadURL(item)
-          const meta = await getMetadata(item)
-          return {
-            id: v4(),
-            name: item.name,
-            urlpath: url,
-            event: meta.customMetadata.eventname,
-            date: meta.customMetadata.eventdate,
-          }
-        }),
-      )
+      const imageListItems = await fetchStorage(imageListRef, { withMeta: true })
       setEventCards(imageListItems)
     }
 

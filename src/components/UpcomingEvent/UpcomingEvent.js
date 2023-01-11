@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { useEffect, useState, useMemo } from "react"
-import { ref, listAll, getDownloadURL, getStorage } from "firebase/storage"
-import { v4 } from "uuid"
+import { ref, getStorage } from "firebase/storage"
+import { fetchStorage } from "../../api/fetchStorage"
 
 const UpcomingEvent = () => {
   const { t } = useTranslation()
@@ -11,23 +11,13 @@ const UpcomingEvent = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      const imageList = await listAll(imageListRef)
-      const imageListItems = await Promise.all(
-        imageList.items.map(async item => {
-          const url = await getDownloadURL(item)
-          let obj = {
-            id: v4(),
-            name: item.name,
-            folderpath: item.fullPath,
-            urlpath: url,
-            showOnHomePage: item.name === "newyearsdrink.jpg" ? true : false,
-          }
-          if (obj.showOnHomePage) {
-            setImageHomePage(obj)
-          }
-          return obj
-        }),
-      )
+      const imageListItems = await fetchStorage(imageListRef)
+      const homePageListItem = imageListItems.find(item => item.name === "newyearsdrink.jpg")
+      // const getHomePageImage = (items) => {
+      //   return items.find(item => item.name === "newyearsdrink.jpg")
+      // }
+      // const homePageListItem = getHomePageImage(imageListItems)
+      setImageHomePage(homePageListItem)
     }
 
     fetch()

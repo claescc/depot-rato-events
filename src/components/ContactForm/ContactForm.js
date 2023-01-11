@@ -6,6 +6,7 @@ import TextField from "./TextField"
 import { mail } from "../../emailConifg"
 import ReCAPTCHA from "react-google-recaptcha"
 import { useState } from "react"
+import classNames from "classnames"
 const ContacthtmlForm = () => {
   const form = useRef()
   const { t } = useTranslation()
@@ -23,6 +24,20 @@ const ContacthtmlForm = () => {
   //const RECAPKEY = process.env.REACT_APP_DRE_RECAPTCHA_SITEKEY
 
   const [captchaIsDone, setCaptchaDone] = useState(false)
+
+  // const defaultButtonClasses =
+  //   "flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none rounded text-lg"
+  // const buttonClasses = `${defaultButtonClasses} ${
+  //   captchaIsDone ? "hover:text-green-500  hover:bg-mint-200" : "disabled:opacity-75"
+  // }`
+
+  const buttonClass = classNames(
+    "flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none rounded text-lg",
+    {
+      "hover:text-green-500  hover:bg-mint-200": captchaIsDone,
+      "disabled:opacity-75 cursor-not-allowed": !captchaIsDone,
+    },
+  )
 
   function handleCaptcha() {
     setCaptchaDone(true)
@@ -76,23 +91,10 @@ const ContacthtmlForm = () => {
             </div>
             <div className="p-2 w-full">
               <ReCAPTCHA ref={recaptchaRef} className="pb-4" sitekey={RECAPKEY} onChange={handleCaptcha} />
-              {captchaIsDone && (
-                <button
-                  type="submit"
-                  onSubmit={handleSubmit}
-                  className="flex mx-auto text-white hover:text-green-500 bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-mint-200 rounded text-lg"
-                >
-                  {t("form.submit")}
-                </button>
-              )}
-              {!captchaIsDone && (
-                <button
-                  disabled={true}
-                  className="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 disabled:opacity-75 focus:outline-none rounded text-lg"
-                >
-                  {t("form.submit")}
-                </button>
-              )}
+              {/* <button type="submit" disabled={!captchaIsDone} onSubmit={handleSubmit} className={buttonClasses}> */}
+              <button type="submit" disabled={!captchaIsDone} onSubmit={handleSubmit} className={buttonClass}>
+                {t("form.submit")}
+              </button>
             </div>
           </div>
         </div>
