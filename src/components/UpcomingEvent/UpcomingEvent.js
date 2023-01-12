@@ -47,6 +47,7 @@ const UpcomingEvent = () => {
             </div>
           )}
         </div>
+        <ComponentSpacer />
       </div>
       <ComponentSpacer />
     </div>

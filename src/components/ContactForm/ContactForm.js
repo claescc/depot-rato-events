@@ -47,7 +47,7 @@ const ContacthtmlForm = () => {
   }
 
   return (
-    <form ref={form} onSubmit={handleSubmit(onSubmit)} className="body-font py-8 relative">
+    <form ref={form} onSubmit={handleSubmit(onSubmit)} className="body-font relative">
       <div className="container px-5 mx-auto">
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-wrap -m-2">

@@ -9,9 +9,9 @@ const Members = () => {
   const [docs, loading] = useCollectionData(query)
 
   return (
-    <div className="text-green-500 mx-auto max-w-3xl pb-12">
-      <div className="p-4">
-        <div className="text-xl py-2">{t("contact.ourteam")}</div>
+    <div className="dre-container">
+      <div className="dre-title">
+        {t("contact.ourteam")}
         {loading && "Loading..."}
       </div>
       <div className="flex flex-row flex-wrap justify-center">
