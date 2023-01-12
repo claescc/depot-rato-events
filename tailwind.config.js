@@ -21,7 +21,12 @@ module.exports = {
       drelogo: "url('../../assets/images/whitedrelogo.png')",
       emptystate: "url('../../assets/images/emptystate.png')",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        moon: ["MoonLight", "sans-serif"],
+        moonbold: ["MoonBold", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

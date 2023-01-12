@@ -1,56 +1,54 @@
 import { useTranslation } from "react-i18next"
 import { useEffect, useState, useMemo } from "react"
-import { ref, listAll, getDownloadURL, getStorage } from "firebase/storage"
-import { v4 } from "uuid"
+import { ref, getStorage } from "firebase/storage"
+import { fetchStorage } from "../../api/fetchStorage"
+import { eventToggle } from "./eventToggle"
+import ComponentSpacer from "../ComponentSpacer/ComponentSpacer"
+import { faCalendar, faLocation, faClock, faCircleInfo } from "@fortawesome/free-solid-svg-icons"
+import TableRowIconText from "../TableRowIconText/TableRowIconText"
 
 const UpcomingEvent = () => {
   const { t } = useTranslation()
   const [imageHomePage, setImageHomePage] = useState()
   const storage = getStorage()
   const imageListRef = useMemo(() => ref(storage, "event-images/"), [storage])
+  const toggleEventHomePage = eventToggle()
 
   useEffect(() => {
     const fetch = async () => {
-      const imageList = await listAll(imageListRef)
-      const imageListItems = await Promise.all(
-        imageList.items.map(async item => {
-          const url = await getDownloadURL(item)
-          let obj = {
-            id: v4(),
-            name: item.name,
-            folderpath: item.fullPath,
-            urlpath: url,
-            showOnHomePage: item.name === "newyearsdrink.jpg" ? true : false,
-          }
-          if (obj.showOnHomePage) {
-            setImageHomePage(obj)
-          }
-          return obj
-        }),
-      )
+      const imageListItems = await fetchStorage(imageListRef)
+      const homePageListItem = imageListItems.find(item => item.folder === toggleEventHomePage)
+      setImageHomePage(homePageListItem)
     }
 
     fetch()
-  }, [imageListRef])
+  }, [imageListRef, toggleEventHomePage])
 
   return (
-    <div className="text-green-500 mx-auto max-w-3xl">
-      <div className="px-4">
-        <div className="text-xl py-2">{t("events.upcoming")}</div>
-      </div>
-      <div className="flex">
-        {imageHomePage && (
-          <div key={imageHomePage.id} className="m-4 flex flex-col sm:flex-row">
-            <img className="w-96" src={imageHomePage.urlpath} alt={imageHomePage.name}></img>
-            <div className="flex flex-col sm:pl-4">
-              <div className="pt-4 sm:pt-0 font-bold ">{t("events.newyear")}</div>
-              <div className="pt-4">{t("events.nydate")}</div>
-              <div className="pt-4">{t("events.location")}</div>
-              <div className="pt-4">{t("events.description")}</div>
+    <div className="mx-auto bg-green-500">
+      <ComponentSpacer />
+      <div className="dre-container text-white">
+        <div className="dre-upcoming-title">{t("events.upcoming")}</div>
+        <ComponentSpacer />
+        <div className="dre-upcoming-wrapper">
+          {imageHomePage && (
+            <div key={imageHomePage.id} className="flex flex-col sm:flex-row">
+              <img className="w-96" src={imageHomePage.urlpath} alt={imageHomePage.name}></img>
+              <div className="flex flex-col sm:pl-4">
+                <table className="border-separate border-spacing-2">
+                  <tbody>
+                    <TableRowIconText icon={faCalendar} text={t("events.newyear")} />
+                    <TableRowIconText icon={faClock} text={t("events.nydate")} />
+                    <TableRowIconText icon={faLocation} text={t("events.location")} />
+                    <TableRowIconText icon={faCircleInfo} text={t("events.description")} />
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
+      <ComponentSpacer />
     </div>
   )
 }

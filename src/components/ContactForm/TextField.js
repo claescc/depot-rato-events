@@ -13,7 +13,7 @@ export default function TextField({ label, name, required, register, errors }) {
         <input
           {...register(name, { required })}
           aria-invalid={errors[name] ? "true" : "false"}
-          className="w-full rounded border border-green-500 focus:border-mint-200 text-base outline-none text-grey-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="form-input"
         />
         {errors[name]?.type === "required" && (
           <p className="text-red" role="alert">

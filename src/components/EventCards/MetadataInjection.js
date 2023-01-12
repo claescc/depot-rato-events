@@ -8,13 +8,13 @@
 //   // Create a reference to the file whose metadata we want to change
 //   const storage = getStorage()
 //   const imgRef = ref(storage, "event-images/newyearsdrink.jpg")
-//   //const [temp, setTemp] = useState([])
+//   const [temp, setTemp] = useState([])
 
 //   // ADD CUTSOME METADATA
 //   const newMetadata = {
 //     customMetadata: {
 //       eventname: t("events.newyear"),
-//       eventdate: t("events.nydate"),
+//       eventdate: "14/01/2023",
 //     },
 //   }
 //   // Update metadata properties

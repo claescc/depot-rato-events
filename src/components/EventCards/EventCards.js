@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
 import { useEffect, useState, useMemo } from "react"
-import { ref, listAll, getDownloadURL, getStorage, getMetadata } from "firebase/storage"
-import { v4 } from "uuid"
+import { ref, getStorage } from "firebase/storage"
+import { fetchStorage } from "../../api/fetchStorage"
 
 const EventCards = () => {
   const { t } = useTranslation()
@@ -11,20 +11,7 @@ const EventCards = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      const imageList = await listAll(imageListRef)
-      const imageListItems = await Promise.all(
-        imageList.items.map(async item => {
-          const url = await getDownloadURL(item)
-          const meta = await getMetadata(item)
-          return {
-            id: v4(),
-            name: item.name,
-            urlpath: url,
-            event: meta.customMetadata.eventname,
-            date: meta.customMetadata.eventdate,
-          }
-        }),
-      )
+      const imageListItems = await fetchStorage(imageListRef, { withMeta: true })
       setEventCards(imageListItems)
     }
 
@@ -32,23 +19,21 @@ const EventCards = () => {
   }, [imageListRef])
 
   return (
-    <div className="text-green-500 mx-auto max-w-3xl">
-      <div className="p-4 pb-0">
-        <div className="text-xl py-4">{t("calendar.all")}</div>
-        <div className="text-justify pb-4">{t("calendar.allinfo")}</div>
+    <div className="dre-container ">
+      <div className="dre-title">{t("calendar.all")}</div>
+      <div className="dre-aligna">{t("calendar.allinfo")}</div>
 
-        <div className="flex flex-col sm:flex-row sm:flex-wrap justify`">
-          {eventCards.map(card => {
-            return (
-              <div key={card.id} className="m-4 w-80  flex border flex-col">
-                <img className="scale-100  h-56" src={card.urlpath} alt={card.name}></img>
-                <div className="pt-4">{card.event}</div>
-                <div className="pt-4">{card.date}</div>
-                <div className="pt-4">Gallery link </div>
-              </div>
-            )
-          })}
-        </div>
+      <div className="flex flex-col sm:flex-row sm:flex-wrap justify`">
+        {eventCards.map(card => {
+          return (
+            <div key={card.id} className="m-4 w-80 flex flex-col">
+              <img className="scale-100  h-56" src={card.urlpath} alt={card.customMetadata.eventname}></img>
+              <div className="pt-4">{card.customMetadata.eventname}</div>
+              <div className="pt-4">{card.customMetadata.eventdate}</div>
+              {/* <div className="pt-4">Gallery link </div> */}
+            </div>
+          )
+        })}
       </div>
     </div>
   )

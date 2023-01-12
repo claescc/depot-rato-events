@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 /* clears the input 'X' from Internet Explorer */
 input[type=search]::-ms-clear {
     display: none;
@@ -24,4 +25,51 @@ input[type=search]::-ms-clear {
     display: none;
   }
   
+  /* button[disabled] {
+    cursor: not-allowed;
+  } */
+
+  @font-face {
+    font-family: "MoonLight";
+    src: url("../../../public/fonts/MoonLight.otf");
+  }
+  @font-face {
+    font-family: "MoonBold";
+    src: url("../../../public/fonts/MoonBold.otf");
+  }
+  
+
+  @layer components {
+    
+    .dre-container {
+      @apply text-green-500 mx-auto max-w-3xl p-4;
+    }
+    
+    .dre-title {
+      @apply text-xl py-2;
+    }
+    .dre-aligna {
+      @apply text-justify py-2;
+    }
+    .dre-spacer {
+      @apply py-4;
+    }
+    .dre-upcoming-title {
+      @apply text-3xl uppercase py-4 font-moon;
+    }
+    .dre-upcoming-wrapper  {
+      @apply flex py-2 ;
+    }
+    
+    .btn-primary {
+      @apply flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none rounded text-lg;
+    }
+    .form-input {
+      @apply w-full rounded border border-green-500 focus:border-mint-200 text-base outline-none text-grey-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out;
+    }
+    .form-textarea {
+      @apply w-full rounded border border-green-500 focus:border-mint-200 h-52 text-base outline-none text-grey-400 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out;
+    }
+  }
+ 
   
