@@ -6,8 +6,8 @@
   },
   "navigation": {
     "home": "Home",
+    "media": "Media",
     "calendar": "Calendar",
-    "gallery": "Gallery",
     "contact": "Contact"
   },
   "footer": {
@@ -18,7 +18,7 @@
     "about": "About",
     "joinus": "Join Us",
     "calendar": "Calendar",
-    "gallery": "Gallery",
+    "media": "Media",
     "facebook": "Facebook",
     "instagram": "Instagram",
     "contact": "Contact",
@@ -66,7 +66,7 @@
     "bbq": "Summer BBQ",
     "bbqdate": "12/06/2022"
   },
-  "calendar": {
+  "media": {
     "all": "All Our Events",
     "allinfo": "A collection of all our events. We try to keep the dates the same each year to maximise attendance. More initiatives will be added in the future. Do you have a good idea? let us know!"
   }

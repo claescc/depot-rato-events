@@ -34,7 +34,7 @@ const UpcomingEvent = () => {
           {imageHomePage && (
             <div key={imageHomePage.id} className="flex flex-col sm:flex-row">
               <img className="w-96" src={imageHomePage.urlpath} alt={imageHomePage.name}></img>
-              <div className="flex flex-col sm:pl-4">
+              <div className="flex flex-col pt-4 sm:pt-0 sm:pl-4">
                 <table className="border-separate border-spacing-2">
                   <tbody>
                     <TableRowIconText icon={faCalendar} text={t("events.newyear")} />

@@ -3,7 +3,6 @@ import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import LanguageSelect from "../LanguageSelect/LanguageSelect"
 
-
 export default function NavBar() {
   const { t } = useTranslation()
   const [navbar, setNavbar] = useState(false)
@@ -54,17 +53,16 @@ export default function NavBar() {
                 {t("navigation.home")}
               </CustomLink>
               <CustomLink to="/calendar" className="text-lg ">
-              {t("navigation.calendar")}
+                {t("navigation.calendar")}
               </CustomLink>
-              <CustomLink to="/gallery" className="text-lg ">
-              {t("navigation.gallery")}
+              <CustomLink to="/media" className="text-lg ">
+                {t("navigation.media")}
               </CustomLink>
               <CustomLink to="/contact" className="text-lg ">
-              {t("navigation.contact")}
+                {t("navigation.contact")}
               </CustomLink>
               <LanguageSelect />
             </ul>
-            
           </div>
         </div>
       </div>

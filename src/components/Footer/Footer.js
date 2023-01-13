@@ -25,8 +25,8 @@ export default function Footer() {
             <CustomLink to="/calendar" className="block pb-2">
               {t("footer.calendar")}
             </CustomLink>
-            <CustomLink to="/gallery" className="block pb-2">
-              {t("footer.gallery")}
+            <CustomLink to="/media" className="block pb-2">
+              {t("footer.media")}
             </CustomLink>
           </ul>
         </div>

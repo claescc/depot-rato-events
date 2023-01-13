@@ -7,7 +7,7 @@
   "navigation": {
     "home": "Home",
     "calendar": "Kalender",
-    "gallery": "Gallerij",
+    "media": "Media",
     "contact": "Contact"
   },
   "footer": {
@@ -18,7 +18,7 @@
     "about": "Over Ons",
     "joinus": "Lid Worden",
     "calendar": "Kalender",
-    "gallery": "Gallerij",
+    "media": "Media",
     "facebook": "Facebook",
     "instagram": "Instagram",
     "contact": "Contact",
@@ -66,7 +66,7 @@
     "bbq": "Zomer BBQ",
     "bbqdate": "12/06/2022"
   },
-  "calendar": {
+  "media": {
     "all": "Al Onze Evenementen",
     "allinfo": "Een volledige collectie van al onze evenementen. We proberen de datums steeds hetzelfde te houden voor maximale aanwezigeheid. Er zullen in de toekomst nog nieuwe initiativen toegevoegd worden. Heb jij een leuk idee? Laat het ons dan weten!"
   }

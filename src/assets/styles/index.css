@@ -60,6 +60,24 @@ input[type=search]::-ms-clear {
     .dre-upcoming-wrapper  {
       @apply flex py-2 ;
     }
+    .dre-cards-container {
+      @apply mx-auto max-w-3xl py-4 grid grid-cols-1 sm:grid-cols-2 gap-8
+    }
+    .dre-card-wrapper {
+      @apply bg-green-300 text-white
+    }
+    .dre-card-img {
+      @apply scale-100 h-60
+    }
+    .dre-card-data-wrapper {
+      @apply grid grid-cols-8 px-2 py-4 gap-4
+    }
+    .dre-card-icon {
+      @apply col-start-1 col-end-2 justify-self-center
+    }
+    .dre-card-info {
+      @apply col-start-2 col-end-8
+    }
     
     .btn-primary {
       @apply flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none rounded text-lg;
