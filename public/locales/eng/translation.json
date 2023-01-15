@@ -34,10 +34,15 @@
     "events": "Events",
     "eventtxt": "There has been a variety of events and gathers held these past years some of them at Depot Rato itself while other events have been offsite. From festive or recreational walks in parks to onsite Newyear's drink, Easter or Summer BBQ gatherings, DRE likes to switch it up so that young and old find something worth attending. More creative events are in the making and if you have a great idea do let us know or join our team to make a difference."
   },
-  "hero": {
-    "dre": "Depot Rato Events",
-    "dreline": "Make time for fun"
+  "calendar": {
+    "all": "All Our Events",
+    "allinfo": "A collection of all our events. We try to keep the dates the same each year to maximise attendance. More initiatives will be added in the future. Do you have a good idea? let us know!"
   },
+  "media": {
+    "all": "All Our Media",
+    "allinfo": "A collection of all our media. More initiatives will be added in the future. Do you have a good idea? let us know!"
+  },
+
   "contact": {
     "us": "Contact Us",
     "infotxt": " For any questions, complaints or fun ideas for new future initiatives please use our contact details or fill in our contact form below. We will do our best to help you further with any inquieries.",
@@ -53,21 +58,22 @@
     "message": "Message",
     "submit": "Send"
   },
+  "hero": {
+    "dre": "Depot Rato Events",
+    "dreline": "Make time for fun"
+  },
   "events": {
     "upcoming": "First Upcoming Event",
     "newyear": "New Year's Drink",
-    "nydate": "Saturday 14/01/2023 at 18:00h",
+    "nydate": "14/01/2023",
     "location": "Depot Rato square",
-    "description": "Bring your scarf and mittens and join us in celebrating the new year with your fellow neighbours. In our big tent you will find beverages and snacks while you warm yourself at a fire or by dancing.",
+    "nyinfo": "Bring your scarf and mittens and join us in celebrating the new year with your fellow neighbours. In our big tent you will find beverages and snacks while you warm yourself at a fire or by dancing.",
     "easter": "Easter Celebration",
-    "easterdate": "02/04/2022",
+    "easterdate": "08/04/2023",
+    "easterinfo": "Bring your scarf and join us in celebrating Easter with your fellow neighbours. In our big tent you will find beverages and snacks while you warm yourself at a fire or by dancing.",
     "halloween": "Autum walk & Halloween Party",
     "halloweendate": "29/10/2022",
     "bbq": "Summer BBQ",
     "bbqdate": "12/06/2022"
-  },
-  "media": {
-    "all": "All Our Events",
-    "allinfo": "A collection of all our events. We try to keep the dates the same each year to maximise attendance. More initiatives will be added in the future. Do you have a good idea? let us know!"
   }
 }

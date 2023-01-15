@@ -37,7 +37,21 @@ input[type=search]::-ms-clear {
     font-family: "MoonBold";
     src: url("../../../public/fonts/MoonBold.otf");
   }
-  
+  @font-face {
+    font-family:"Monda";
+    src: url("../../../public/fonts/Monda-Regular.ttf");
+
+  } 
+  @font-face {
+    font-family:"Jost";
+    src: url("../../../public/fonts/Jost-SemiBold.ttf");
+
+  } 
+  @font-face {
+    font-family:"OpenSans";
+    src: url("../../../public/fonts/OpenSans-Regular.ttf");
+
+  } 
 
   @layer components {
     
@@ -77,6 +91,18 @@ input[type=search]::-ms-clear {
     }
     .dre-card-info {
       @apply col-start-2 col-end-8
+    }
+    .dre-media-grid {
+      @apply grid grid-cols-1 sm:grid-cols-4
+    }
+    .dre-media-grid-item {
+      @apply  text-white h-80 flex flex-col justify-center items-center
+    }
+    .dre-media-item-icon {
+      @apply h-24
+    }
+    .dre-media-item-link {
+      @apply py-8
     }
     
     .btn-primary {

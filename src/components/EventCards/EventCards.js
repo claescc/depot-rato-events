@@ -22,8 +22,8 @@ const EventCards = () => {
 
   return (
     <div className="dre-container ">
-      <div className="dre-title">{t("media.all")}</div>
-      <div className="dre-aligna">{t("media.allinfo")}</div>
+      <div className="dre-title">{t("calendar.all")}</div>
+      <div className="dre-aligna">{t("calendar.allinfo")}</div>
 
       <div className="dre-cards-container">
         {eventCards.map(card => {

@@ -37,10 +37,10 @@ const UpcomingEvent = () => {
               <div className="flex flex-col pt-4 sm:pt-0 sm:pl-4">
                 <table className="border-separate border-spacing-2">
                   <tbody>
-                    <TableRowIconText icon={faCalendar} text={t("events.newyear")} />
-                    <TableRowIconText icon={faClock} text={t("events.nydate")} />
+                    <TableRowIconText icon={faCalendar} text={t("events.easter")} />
+                    <TableRowIconText icon={faClock} text={t("events.easterdate")} />
                     <TableRowIconText icon={faLocation} text={t("events.location")} />
-                    <TableRowIconText icon={faCircleInfo} text={t("events.description")} />
+                    <TableRowIconText icon={faCircleInfo} text={t("events.easterinfo")} />
                   </tbody>
                 </table>
               </div>

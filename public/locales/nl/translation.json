@@ -34,10 +34,15 @@
     "events": "Evenementen",
     "eventtxt": "Er zijn al verschillende soorten evenementen geweest...."
   },
-  "hero": {
-    "dre": "Depot Rato Events",
-    "dreline": "Maak tijd voor plezier"
+  "calendar": {
+    "all": "Al Onze Evenementen",
+    "allinfo": "Een volledige collectie van al onze evenementen. We proberen de datums steeds hetzelfde te houden voor maximale aanwezigeheid. Er zullen in de toekomst nog nieuwe initiativen toegevoegd worden. Heb jij een leuk idee? Laat het ons dan weten!"
   },
+  "media": {
+    "all": "Al Onze Media",
+    "allinfo": "Een volledige collectie van al onze media. Er zullen in de toekomst nog nieuwe initiativen toegevoegd worden. Heb jij een leuk idee? Laat het ons dan weten!"
+  },
+
   "contact": {
     "us": "Contacteer Ons",
     "infotxt": "Voor vragen, klachten of leuke ideeën...",
@@ -53,21 +58,22 @@
     "message": "Bericht",
     "submit": "Versturen"
   },
+  "hero": {
+    "dre": "Depot Rato Events",
+    "dreline": "Maak tijd voor plezier"
+  },
   "events": {
     "upcoming": "Eerst Volgende Event",
     "newyear": "Nieuwjaarsdrink",
-    "nydate": "Zaterdag 14/01/2023 om 18:00u",
+    "nydate": "14/01/2023",
     "location": "Depot Rato binnenplein",
-    "description": "Breng je sjaal en handschoenen en vier met je buurtjes het nieuwejaar. In onze grote tent zal je drankjes en snacks terugvinden terwijl jij je kan opwarmen aan onze vuurtjes of door te dansen.",
+    "nyinfo": "Breng je sjaal en handschoenen en vier met je buurtjes het nieuwejaar. In onze grote tent zal je drankjes en snacks terugvinden terwijl jij je kan opwarmen aan onze vuurtjes of door te dansen.",
     "easter": "Paasfeest",
-    "easterdate": "02/04/2022",
+    "easterdate": "08/04/2023",
+    "easterinfo": "Breng je sjaal en vier met je buurtjes Paaasfeest. In onze grote tent zal je drankjes en snacks terugvinden terwijl jij je kan opwarmen aan onze vuurtjes of door te dansen.",
     "halloween": "Najaarswandeling & Halloween Feest",
     "halloweendate": "29/10/2022",
     "bbq": "Zomer BBQ",
     "bbqdate": "12/06/2022"
-  },
-  "media": {
-    "all": "Al Onze Evenementen",
-    "allinfo": "Een volledige collectie van al onze evenementen. We proberen de datums steeds hetzelfde te houden voor maximale aanwezigeheid. Er zullen in de toekomst nog nieuwe initiativen toegevoegd worden. Heb jij een leuk idee? Laat het ons dan weten!"
   }
 }

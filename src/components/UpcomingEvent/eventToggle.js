@@ -2,11 +2,11 @@ export const eventToggle = () => {
   const allEvents = [
     {
       folder: "event-images/newyearsdrink.jpg",
-      showevent: true,
+      showevent: false,
     },
     {
       folder: "event-images/easter.jpg",
-      showevent: false,
+      showevent: true,
     },
 
     {
