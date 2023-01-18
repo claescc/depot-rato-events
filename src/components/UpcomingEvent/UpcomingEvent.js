@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next"
 import { useEffect, useState, useMemo } from "react"
 import { ref, getStorage } from "firebase/storage"
 import { fetchStorage } from "../../api/fetchStorage"
-import { eventToggle } from "./eventToggle"
+import { useEventToggle } from "./useEventToggle"
 import ComponentSpacer from "../ComponentSpacer/ComponentSpacer"
 import { faCalendar, faLocation, faClock, faCircleInfo } from "@fortawesome/free-solid-svg-icons"
 import TableRowIconText from "../TableRowIconText/TableRowIconText"
@@ -12,13 +12,16 @@ const UpcomingEvent = () => {
   const [imageHomePage, setImageHomePage] = useState()
   const storage = getStorage()
   const imageListRef = useMemo(() => ref(storage, "event-images/"), [storage])
-  const toggleEventHomePage = eventToggle()
+  const toggleEventHomePage = useEventToggle()
+  console.log(toggleEventHomePage)
+  console.log("rerender UpcomingEvent")
 
   useEffect(() => {
     const fetch = async () => {
       const imageListItems = await fetchStorage(imageListRef)
-      const homePageListItem = imageListItems.find(item => item.folder === toggleEventHomePage)
+      const homePageListItem = imageListItems.find(item => item.folder === toggleEventHomePage.folder)
       setImageHomePage(homePageListItem)
+      console.log("rerender useffect")
     }
 
     fetch()
@@ -37,10 +40,10 @@ const UpcomingEvent = () => {
               <div className="flex flex-col pt-4 sm:pt-0 sm:pl-4">
                 <table className="border-separate border-spacing-2">
                   <tbody>
-                    <TableRowIconText icon={faCalendar} text={t("events.easter")} />
-                    <TableRowIconText icon={faClock} text={t("events.easterdate")} />
-                    <TableRowIconText icon={faLocation} text={t("events.location")} />
-                    <TableRowIconText icon={faCircleInfo} text={t("events.easterinfo")} />
+                    <TableRowIconText icon={faCalendar} text={toggleEventHomePage.eventname} />
+                    <TableRowIconText icon={faClock} text={toggleEventHomePage.eventdate} />
+                    <TableRowIconText icon={faLocation} text={toggleEventHomePage.eventlocation} />
+                    <TableRowIconText icon={faCircleInfo} text={toggleEventHomePage.eventinformation} />
                   </tbody>
                 </table>
               </div>
