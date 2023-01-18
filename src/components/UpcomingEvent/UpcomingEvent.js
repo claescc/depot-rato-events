@@ -13,19 +13,16 @@ const UpcomingEvent = () => {
   const storage = getStorage()
   const imageListRef = useMemo(() => ref(storage, "event-images/"), [storage])
   const toggleEventHomePage = useEventToggle()
-  console.log(toggleEventHomePage)
-  console.log("rerender UpcomingEvent")
 
   useEffect(() => {
     const fetch = async () => {
       const imageListItems = await fetchStorage(imageListRef)
       const homePageListItem = imageListItems.find(item => item.folder === toggleEventHomePage.folder)
       setImageHomePage(homePageListItem)
-      console.log("rerender useffect")
     }
 
     fetch()
-  }, [imageListRef, toggleEventHomePage])
+  }, [imageListRef, toggleEventHomePage.folder])
 
   return (
     <div className="mx-auto bg-green-500">
