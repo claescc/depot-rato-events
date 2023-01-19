@@ -34,7 +34,7 @@ export default function Footer() {
           <h2 className="mb-4 text-sm font-semibold uppercase">{t("footer.socialmedia")}</h2>
           <ul className="text-sm font-light">
             <li className="text-white hover:text-mint-200 block pb-2">
-              <a href="https://www.facebook.com/groups/depotratodurabrikcommunity" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=100089286275731" target="_blank" rel="noreferrer">
                 {t("footer.facebook")}
               </a>
             </li>
@@ -43,21 +43,26 @@ export default function Footer() {
                 {t("footer.instagram")}
               </a>
             </li>
-
-            <CustomLink to="/contact" className=" block pb-2">
-              {t("footer.contact")}
-            </CustomLink>
+            <li className="text-white hover:text-mint-200 block pb-2">
+              <a href="https://www.tiktok.com/@depotratoevents" target="_blank" rel="noreferrer">
+                {t("footer.tiktok")}
+              </a>
+            </li>
+            <li className="text-white hover:text-mint-200 block pb-2">
+              <a href="https://twitter.com/DepotRatoEvents" target="_blank" rel="noreferrer">
+                {t("footer.twitter")}
+              </a>
+            </li>
           </ul>
         </div>
         <div>
           <h2 className="mb-4 text-sm font-semibold uppercase">{t("footer.legal")}</h2>
           <ul className="text-sm font-light">
-            <CustomLink to="/" className="block pb-2">
+            <CustomLink to="/legal" className="block pb-2">
               {t("footer.privacypolicy")}
             </CustomLink>
-
-            <CustomLink to="/" className="block pb-2">
-              {t("footer.termsandconditions")}
+            <CustomLink to="/contact" className=" block pb-2">
+              {t("footer.contact")}
             </CustomLink>
           </ul>
         </div>

@@ -1,6 +1,7 @@
 import Home from "./modules/pages/Home"
 import Calendar from "./modules/pages/Calendar"
 import Media from "./modules/pages/Media"
+import Legal from "./modules/pages/Legal"
 import Contact from "./modules/pages/Contact"
 import NavBar from "./components/Navigation/NavBar"
 import Footer from "./components/Footer/Footer"
@@ -16,6 +17,7 @@ function App() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/legal" element={<Legal />} />
       </Routes>
       <Footer />
     </>
