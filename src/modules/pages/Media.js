@@ -1,7 +1,7 @@
-import EmptyState from "../../components/EmptyState/EmptyState"
 import ComponentSpacer from "../../components/ComponentSpacer/ComponentSpacer"
 import MediaIntro from "../../components/MediaIntro/MediaIntro"
 import MediaWindow from "../../components/MediaWindow/MediaWindow"
+import InstagramFeature from "../../components/InstagramFeature/InstagramFeature"
 
 export default function Media() {
   return (
@@ -9,9 +9,10 @@ export default function Media() {
       <ComponentSpacer />
       <MediaIntro />
       <ComponentSpacer />
-
       <MediaWindow />
-      <EmptyState />
+      <ComponentSpacer />
+      <ComponentSpacer />
+      <InstagramFeature token={process.env.REACT_APP_DRE_INSTAGRAM_TOKEN} limit={1} />
       <ComponentSpacer />
     </>
   )

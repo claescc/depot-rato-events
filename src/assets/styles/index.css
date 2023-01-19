@@ -78,7 +78,7 @@ input[type=search]::-ms-clear {
       @apply mx-auto max-w-3xl py-4 grid grid-cols-1 sm:grid-cols-2 gap-8
     }
     .dre-card-wrapper {
-      @apply bg-green-300 text-white
+      @apply bg-green-300 text-white  shadow-green-500 drop-shadow-2xl
     }
     .dre-card-img {
       @apply scale-100 h-60
@@ -92,6 +92,9 @@ input[type=search]::-ms-clear {
     .dre-card-info {
       @apply col-start-2 col-end-8
     }
+    .dre-media-container {
+      @apply rounded-lg text-green-500 mx-auto max-w-3xl p-4 shadow-green-500 drop-shadow-2xl
+    }
     .dre-media-grid {
       @apply grid grid-cols-1 sm:grid-cols-4
     }
@@ -103,6 +106,12 @@ input[type=search]::-ms-clear {
     }
     .dre-media-item-link {
       @apply py-8
+    }
+    .dre-media-banner {
+      @apply text-white flex items-center justify-end pb-4  gap-4
+    }
+    .dre-media-insta-types {
+      @apply w-full h-auto rounded-lg
     }
     
     .btn-primary {
