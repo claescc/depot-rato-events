@@ -36,16 +36,18 @@ const InstagramFeature = ({ ...props }) => {
   }, [props.limit, props.token])
 
   return (
-    <div className="dre-media-container  bg-blue-500">
-      <div className="dre-media-banner ">
-        <div className="font-monda">
-          <a href="https://www.instagram.com/depotratoevents/" target="_blank" rel="noreferrer">
-            @depotratoevents
-          </a>
+    <div className="dre-media-container">
+      <div className="dre-media-banner bg-blue-500 ">
+        <div className="dre-media-header">
+          <div className="font-monda">
+            <a href="https://www.instagram.com/depotratoevents/" target="_blank" rel="noreferrer">
+              @depotratoevents
+            </a>
+          </div>
+          <FontAwesomeIcon className="h-8" icon={faInstagram} />
         </div>
-        <FontAwesomeIcon className="h-8" icon={faInstagram} />
       </div>
-      <div className="">
+      <div className="dre-media-feed bg-blue-500">
         {feeds.map(feed => (
           <Feed key={feed.id} feed={feed} />
         ))}

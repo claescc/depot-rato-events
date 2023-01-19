@@ -41,7 +41,9 @@
   },
   "media": {
     "all": "Al Onze Media",
-    "allinfo": "Een volledige collectie van al onze media. Er zullen in de toekomst nog nieuwe initiativen toegevoegd worden. Heb jij een leuk idee? Laat het ons dan weten!"
+    "allinfo": "Een volledige collectie van al onze media. Er zullen in de toekomst nog nieuwe initiativen toegevoegd worden. Heb jij een leuk idee? Laat het ons dan weten!",
+    "feed": "Depot Rato Media Feed",
+    "feedinfo": "Zie onze laatste sociaale media posts."
   },
 
   "contact": {
