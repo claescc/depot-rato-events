@@ -120,6 +120,9 @@ input[type=search]::-ms-clear {
       @apply flex justify-center pb-8 rounded-br-lg rounded-bl-lg
     }
 
+    .btn-preregister {
+      @apply flex mx-auto hover:bg-roze-500 bg-teal-300 text-white border-0 py-2 px-8 focus:outline-none rounded text-lg cursor-pointer
+    }
     
     .btn-primary {
       @apply flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none rounded text-lg;
