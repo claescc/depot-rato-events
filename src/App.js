@@ -6,6 +6,7 @@ import Contact from "./modules/pages/Contact"
 import NavBar from "./components/Navigation/NavBar"
 import Footer from "./components/Footer/Footer"
 import { Route, Routes } from "react-router-dom"
+import Dashboard from "./modules/adminpages/Dashboard"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/legal" element={<Legal />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
       <Footer />
     </>

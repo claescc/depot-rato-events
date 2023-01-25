@@ -14,7 +14,7 @@ export default function Footer() {
             <CustomLink to="/home" className="block pb-2">
               {t("footer.about")}
             </CustomLink>
-            <CustomLink to="/" className="block pb-2">
+            <CustomLink to="/contact" className="block pb-2">
               {t("footer.joinus")}
             </CustomLink>
           </ul>

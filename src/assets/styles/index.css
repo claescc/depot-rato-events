@@ -58,9 +58,17 @@ input[type=search]::-ms-clear {
     .dre-container {
       @apply text-green-500 mx-auto max-w-3xl p-4;
     }
-    
+    .dre-container-dark {
+      @apply text-white bg-green-500 mx-auto max-w-3xl p-4;
+    }
+    .dre-title-dark-standalone {
+      @apply text-white font-moon bg-green-500 mx-auto max-w-3xl p-4;
+    }
     .dre-title {
       @apply text-xl py-2;
+    }
+    .dre-title-dark {
+      @apply text-white bg-green-500 text-xl py-2;
     }
     .dre-aligna {
       @apply text-justify py-2;
@@ -126,6 +134,15 @@ input[type=search]::-ms-clear {
     
     .btn-primary {
       @apply flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none rounded text-lg;
+    }
+    .btn-green {
+      @apply flex text-white bg-green-500 border-0 py-2 px-8 focus:outline-none rounded;
+    }
+    .btn-secondary {
+      @apply flex text-green-500 hover:text-mint-200 py-2 px-8 border hover:border-mint-200  rounded;
+    }
+    .form-inventory {
+      @apply flex flex-row flex-wrap justify-between gap-4 py-4
     }
     .form-input {
       @apply w-full rounded border border-green-500 focus:border-mint-200 text-base outline-none text-grey-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out;
