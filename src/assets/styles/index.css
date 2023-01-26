@@ -127,6 +127,21 @@ input[type=search]::-ms-clear {
     .dre-media-feed {
       @apply flex justify-center pb-8 rounded-br-lg rounded-bl-lg
     }
+    .dre-table-head{
+      @apply grid grid-cols-12 font-moonbold border p-1
+    }
+    .dre-table-row{
+      @apply grid grid-cols-12 font-moon border-b border-x p-1
+    }
+    .dre-table-item-xs {
+      @apply col-span-1 
+    }
+    .dre-table-item-sm {
+      @apply col-span-2 
+    }
+    .dre-table-item-m {
+      @apply col-span-3 
+    }
 
     .btn-preregister {
       @apply flex mx-auto hover:bg-roze-500 bg-teal-300 text-white border-0 py-2 px-8 focus:outline-none rounded text-lg cursor-pointer

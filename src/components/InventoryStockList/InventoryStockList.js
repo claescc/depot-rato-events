@@ -14,8 +14,9 @@ const InventoryStockList = () => {
             ...prevInventory,
             {
               name: doc.data().name,
+              description: doc.data().name,
               price: doc.data().price,
-              count: doc.data().quantity,
+              quantity: doc.data().quantity,
             },
           ]
         })
@@ -25,18 +26,26 @@ const InventoryStockList = () => {
   }, [])
   // Leave empty do not rerender = read only once out of db
 
-  useEffect(() => {
-    console.log(inventory)
-  }, [inventory])
-
   return (
     <>
-      {inventory.map(item => {
+      <div className="dre-table-head">
+        <div className="dre-table-item-xs">nr</div>
+        <div className="dre-table-item-sm">name</div>
+        <div className="dre-table-item-m">description</div>
+        <div className="dre-table-item-sm text-right">unit price</div>
+        <div className="dre-table-item-sm text-right">quantity</div>
+        <div className="dre-table-item-sm text-right">total</div>
+      </div>
+
+      {inventory.map((item, i) => {
         return (
-          <div key={item.name} className="flex flex-row gap-4">
-            <div>{item.name}</div>
-            <div>{item.price}</div>
-            <div>{item.count}</div>
+          <div key={item.name} className="dre-table-row">
+            <div className="dre-table-item-xs">{i}</div>
+            <div className="dre-table-item-sm">{item.name}</div>
+            <div className="dre-table-item-m">{item.description}</div>
+            <div className="dre-table-item-sm text-right">{item.price}&nbsp;&euro;</div>
+            <div className="dre-table-item-sm text-right">{item.quantity}</div>
+            <div className="dre-table-item-sm text-right">{item.price * item.quantity}&nbsp;&euro;</div>
           </div>
         )
       })}
