@@ -5,8 +5,11 @@ import { doc, setDoc } from "firebase/firestore"
 import { db } from "../../firebaseConfig"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
+import { stockAdded } from "../../store"
+import { useDispatch } from "react-redux"
 
 const CreateStockItem = () => {
+  const [showForm, setShowForm] = useState(false)
   const {
     register,
     reset,
@@ -14,7 +17,7 @@ const CreateStockItem = () => {
     handleSubmit,
   } = useForm()
 
-  const [showForm, setShowForm] = useState(false)
+  const dispatch = useDispatch()
 
   const openForm = e => {
     e.preventDefault()
@@ -24,13 +27,16 @@ const CreateStockItem = () => {
 
   const onSubmit = data => {
     console.log("data: ", data)
-    // update database firestorage
-    setDoc(doc(db, "inventory", data.name), {
+    const stock = {
       name: data.name,
       description: data.description,
       price: data.price,
       quantity: data.quantity,
-    })
+    }
+
+    // update database firestorage
+    setDoc(doc(db, "inventory", data.name), stock)
+    dispatch(stockAdded(stock))
     alert("Success: stock item created in inventory")
     reset()
     setShowForm(false)
