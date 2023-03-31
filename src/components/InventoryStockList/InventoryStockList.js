@@ -1,16 +1,16 @@
 import { collection, getDocs } from "firebase/firestore"
 import { db } from "../../firebaseConfig"
 import { useEffect, useState } from "react"
-import { useSelector } from "react-redux"
+//import { useSelector } from "react-redux"
 
 const InventoryStockList = () => {
   const [inventory, setInventory] = useState([])
-  const stockitems = useSelector(state => state.inventory.value)
-  const [stock, setStock] = useState([])
+  // const stockitems = useSelector(state => state.inventory.value)
+  // const [stock, setStock] = useState([])
 
-  useEffect(() => {
-    setStock(Object.keys(stockitems))
-  }, [])
+  // useEffect(() => {
+  //   setStock(Object.keys(stockitems))
+  // }, [])
 
   useEffect(() => {
     const fetch = async () => {
@@ -44,7 +44,7 @@ const InventoryStockList = () => {
         <div className="dre-table-item-sm text-right">total</div>
       </div>
 
-      {stock.map((item, i) => {
+      {/* {stock.map((item, i) => {
         return (
           <div key={item.name} className="dre-table-row">
             <div className="dre-table-item-xs">{i}</div>
@@ -55,7 +55,7 @@ const InventoryStockList = () => {
             <div className="dre-table-item-sm text-right">{item.price * item.quantity}&nbsp;&euro;</div>
           </div>
         )
-      })}
+      })} */}
       {inventory.map((item, i) => {
         return (
           <div key={item.name} className="dre-table-row">
