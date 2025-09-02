@@ -27,37 +27,42 @@
     "privacypolicy": "Privacy Policy",
     "claescc": "CLAESCC PRODUCTIONS. All Rights Reserved."
   },
+ "disclaimer": {
+  "museum": "Mechelen Heritage & Archive Depot Rato",
+  "museumtxt": "Depot Rato serves as Mechelen’s official cultural heritage and archive center, housed within two beautifully restored warehouses of the former Société Rateau in Muizen. It preserves thousands of cultural artifacts, archaeological finds, artworks, historical documents, and library collections. Committed to safeguarding the city’s legacy, the depot offers conservation services, guided tours, and heritage-focused events.",
+  "museumlink": "Explore the official Depot Rato Museum website"
+  },
   "home": {
     "dre": "Depot Rato Events",
-    "dretxt": "Depot Rato Events is the result of a small neighbourhood idea of a handful of residents to bring an entire neighbourhood together. This by holding small gatherings for various occasions where residents could drink and eat as they mingled amongst their fellow residents. This idea has now grown into a bigger community where now events are organized on a bigger scale in our growing neighbourhood.",
+    "dretxt": "Depot Rato Events began as a grassroots initiative by a small group of neighbours aiming to unite the community through intimate gatherings. These events allowed residents to connect over food and drinks in a welcoming atmosphere. Today, this vision has blossomed into a vibrant community, organizing larger-scale events that celebrate and strengthen our growing neighbourhood.",
     "neighbourhood": "The Neighbourhood",
-    "neightxt": "The community is made up of residents in Muizen, Mechelen who reside in and around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, etc. Anyone who lives in the vicinity and would like to be part of the community is more than welcome to join us in any future events or gatherings.",
+    "neightxt": "Our community consists of residents from Muizen, Mechelen, living in and around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, and nearby areas. Everyone living nearby is warmly invited to join us in future events and celebrations, fostering a strong, inclusive neighbourhood spirit.",
     "events": "Events",
-    "eventtxt": "There has been a variety of events and gathers held these past years some of them at Depot Rato itself while other events have been offsite. From festive or recreational walks in parks to onsite Newyear's drink, Easter or Summer BBQ gatherings, DRE likes to switch it up so that young and old find something worth attending. More creative events are in the making and if you have a great idea do let us know or join our team to make a difference."
+    "eventtxt": "Over the years, we’ve hosted a diverse range of events, both at Depot Rato and offsite. From festive walks in local parks to seasonal gatherings like New Year’s drinks, Easter celebrations, and summer BBQs, Depot Rato Events offers something for all ages. We’re continuously crafting creative new experiences—if you have an idea, we’d love to hear from you or welcome you to join our team."
   },
   "calendar": {
     "all": "All Our Events",
-    "allinfo": "A collection of all our events. We try to keep the dates the same each year to maximise attendance. More initiatives will be added in the future. Do you have a good idea? let us know!"
+    "allinfo": "Discover our full lineup of events. We aim to hold these on consistent dates each year to maximize participation. Stay tuned for exciting new initiatives, and if you have ideas, please share them with us!"
   },
   "media": {
     "all": "All Our Media",
-    "allinfo": "A collection of all our media. More initiatives will be added in the future. Do you have a good idea? let us know!",
+    "allinfo": "Browse our complete collection of media content. We’re constantly expanding our offerings, so if you have creative suggestions, don’t hesitate to reach out!",
     "feed": "Depot Rato Media Feed",
-    "feedinfo": "See our latest social media post."
+    "feedinfo": "Catch the latest updates and posts from our social media channels."
   },
 
   "contact": {
     "us": "Contact Us",
-    "infotxt": " For any questions, complaints or fun ideas for new future initiatives please use our contact details or fill in our contact form below. We will do our best to help you further with any inquieries.",
+    "infotxt": "For questions, feedback, or exciting ideas for future initiatives, please use the contact details below or fill out our contact form. We’re here to assist and look forward to hearing from you.",
     "joinus": "Join Us",
-    "jointxt": "The community is made up of residents in Muizen, Mechelen who reside in and around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, etc. Anyone who lives in the vicinity and would like to be part of the community is more than welcome to join us in any future events or gatherings.",
+    "jointxt": "Our community includes residents from Muizen, Mechelen, around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, and nearby areas. If you live close by and want to be part of our vibrant community, we warmly welcome you to join us at upcoming events and gatherings.",
     "meetteam": "Meet The Events Team",
     "orgmembers": "Organization Members",
     "orgvolunteers": "Volunteers"
   },
   "form": {
-    "firstname": "Firstname",
-    "lastname": "Lastname",
+    "firstname": "First Name",
+    "lastname": "Last Name",
     "phone": "Phone",
     "email": "Email",
     "message": "Message",
@@ -65,32 +70,32 @@
   },
   "hero": {
     "dre": "Depot Rato Events",
-    "dreline": "Make time for fun"
+    "dreline": "Make Time for Joy and Connection"
   },
   "events": {
-    "upcoming": "First Upcoming Event",
+    "upcoming": "Next Upcoming Event",
     "preregbtn": "Register Now!",
-    "preregister": "Interested in our next event?",
-    "preregisterinfo": "Pre register by clicking on the button below:",
-    "newyear": "New Year's Drink",
+    "preregister": "Interested in Our Next Event?",
+    "preregisterinfo": "Secure your spot by clicking the button below:",
+    "newyear": "New Year's Celebration",
     "nydate": "14/01/2023",
-    "location": "Depot Rato square",
-    "nyinfo": "Bring your scarf and mittens and join us in celebrating the new year with your fellow neighbours. In our big tent you will find beverages and snacks while you warm yourself at a fire or by dancing.",
+    "location": "Depot Rato Square",
+    "nyinfo": "Bundle up with your scarf and mittens and join us to welcome the new year alongside your neighbours. Enjoy drinks and snacks in our spacious tent, cozy up by the fire, or dance the evening away.",
     "easter": "Easter Celebration",
     "easterdate": "15/04/2023",
-    "easterinfo": "Bring your good mood and join us in celebrating Easter with your fellow neighbours. In our big tent you will find beverages and snacks while you warm yourself at a fire or by dancing.",
-    "halloween": "Autum walk & Halloween Party",
+    "easterinfo": "Bring your cheerful spirit and celebrate Easter with your neighbours. Warm up by the fire or dance under our large tent while enjoying refreshments and snacks.",
+    "halloween": "Autumn Walk & Halloween Party",
     "halloweendate": "29/10/2022",
-    "haloweeninfo": "Bring your good mood and even better a costume and join us in celebrating Halloween. In our big tent you will find beverages and snacks while you warm yourself at a fire or by dancing.",
+    "haloweeninfo": "Come dressed in your best costume and join us for a festive Halloween celebration. Enjoy drinks and snacks in our tent, warm yourself by the fire, and dance the night away.",
     "bbq": "Summer BBQ",
     "bbqdate": "12/06/2022",
-    "bbqinfo": "Bring your good mood and join our big BBQ event. In our big tent you will find shade and music as you enjoy our variety of cold drinks and BBQ assortments.",
+    "bbqinfo": "Join us for a lively summer BBQ event. Relax in our shaded tent with music, savor a variety of cold drinks, and enjoy delicious BBQ fare.",
     "pizza": "Summer Pizza Party",
     "pizzadate": "24/06/2022",
-    "pizzainfo": "Bring your good mood and join our big Pizza event. In our big tent you will find shade and music as you enjoy our variety of cold drinks and pizza assortments."
+    "pizzainfo": "Celebrate summer with us at our pizza party. Enjoy music and refreshments in our shaded tent while indulging in a variety of tasty pizzas."
   },
   "sponsorship": {
     "title": "Sponsorship",
-    "info": "Depot Rato Events is a non-profit organisation that you can sponsor as an individual or as an organisation. Depending on the form of sponsorship we can provide the sponsor with advertisements on our Social Media and website or the sponsor can choose to receive a variety of items in exchange for their gift."
+    "info": "Depot Rato Events is a non-profit organization that welcomes sponsorships from individuals and businesses. Depending on the sponsorship level, we offer advertising opportunities on our social media channels and website, or a selection of exclusive items in appreciation of your support."
   }
 }

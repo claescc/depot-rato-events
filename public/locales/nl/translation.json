@@ -24,42 +24,45 @@
     "tiktok": "TikTok",
     "twitter": "Twitter",
     "contact": "Contact",
-    "privacypolicy": "Privacy wetgeving",
-    "claescc": "CLAESCC PRODUCTIONS. All Rights Reserved."
+    "privacypolicy": "Privacybeleid",
+    "claescc": "CLAESCC PRODUCTIONS. Alle rechten voorbehouden."
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "text": "De informatie op deze website wordt verstrekt zonder enige garantie. Depot Rato Events is niet aansprakelijk voor eventuele fouten of onvolledigheden."
   },
   "home": {
     "dre": "Depot Rato Events",
-    "dretxt": "Depot Rato is een idee gegroeid..",
+    "dretxt": "Depot Rato is ontstaan uit een idee dat is uitgegroeid tot een bloeiende gemeenschap.",
     "neighbourhood": "De Buurt",
-    "neightxt": "De buurt is omgemaakt met inwoners van Muizen..",
+    "neightxt": "Onze buurt wordt gevormd door de bewoners van Muizen, die samen een warme en betrokken gemeenschap vormen.",
     "events": "Evenementen",
-    "eventtxt": "Er zijn al verschillende soorten evenementen geweest...."
+    "eventtxt": "We organiseren diverse evenementen die de buurt samenbrengen en het gemeenschapsgevoel versterken."
   },
   "calendar": {
     "all": "Al Onze Evenementen",
-    "allinfo": "Een volledige collectie van al onze evenementen. We proberen de datums steeds hetzelfde te houden voor maximale aanwezigeheid. Er zullen in de toekomst nog nieuwe initiativen toegevoegd worden. Heb jij een leuk idee? Laat het ons dan weten!"
+    "allinfo": "Een volledige verzameling van al onze evenementen. We streven ernaar de data consistent te houden voor maximale aanwezigheid. In de toekomst zullen er nieuwe initiatieven worden toegevoegd. Heb jij een leuk idee? Laat het ons weten!"
   },
   "media": {
     "all": "Al Onze Media",
-    "allinfo": "Een volledige collectie van al onze media. Er zullen in de toekomst nog nieuwe initiativen toegevoegd worden. Heb jij een leuk idee? Laat het ons dan weten!",
+    "allinfo": "Een uitgebreide collectie van al onze media. Nieuwe initiatieven worden in de toekomst toegevoegd. Heb jij een leuk idee? Laat het ons weten!",
     "feed": "Depot Rato Media Feed",
-    "feedinfo": "Zie onze laatste sociaale media posts."
+    "feedinfo": "Bekijk onze laatste berichten op sociale media."
   },
-
   "contact": {
     "us": "Contacteer Ons",
-    "infotxt": "Voor vragen, klachten of leuke ideeën...",
-    "joinus": "Wordt Lid",
-    "jointxt": "Wil je mee deeluitmaken van onze community...",
+    "infotxt": "Voor vragen, opmerkingen of leuke ideeën...",
+    "joinus": "Word Lid",
+    "jointxt": "Wil je deel uitmaken van onze community? Sluit je dan bij ons aan!",
     "meetteam": "Ontmoet Het Events Team",
-    "orgmembers": "Organiserende leden",
+    "orgmembers": "Organiserende Leden",
     "orgvolunteers": "Vrijwilligers"
   },
   "form": {
     "firstname": "Voornaam",
     "lastname": "Achternaam",
-    "phone": "Telefoon",
-    "email": "Emailadres",
+    "phone": "Telefoonnummer",
+    "email": "E-mailadres",
     "message": "Bericht",
     "submit": "Versturen"
   },
@@ -68,29 +71,29 @@
     "dreline": "Maak tijd voor plezier"
   },
   "events": {
-    "upcoming": "Eerst Volgende Event",
+    "upcoming": "Eerstvolgende Evenement",
     "preregbtn": "Nu Inschrijven!",
-    "preregister": "Geintereseerd in ons event?",
-    "preregisterinfo": "Inschrijven kan via onderstaande knop:",
+    "preregister": "Geïnteresseerd in ons evenement?",
+    "preregisterinfo": "Schrijf je in via onderstaande knop:",
     "newyear": "Nieuwjaarsdrink",
     "nydate": "14/01/2023",
-    "location": "Depot Rato binnenplein",
-    "nyinfo": "Breng je sjaal en handschoenen en vier met je buurtjes het nieuwejaar. In onze grote tent zal je drankjes en snacks terugvinden terwijl jij je kan opwarmen aan onze vuurtjes of door te dansen.",
+    "location": "Depot Rato Binnenplein",
+    "nyinfo": "Breng je sjaal en handschoenen mee en vier het nieuwe jaar met je buurtgenoten. In onze grote tent vind je drankjes en snacks, terwijl je kunt opwarmen bij de vuurkorven of dansen.",
     "easter": "Paasfeest",
     "easterdate": "15/04/2023",
-    "easterinfo": "Breng je goed humeur en vier met je buurtjes Pasen. In onze grote tent zal je drankjes en snacks terugvinden terwijl jij je kan opwarmen aan onze vuurtjes of door te dansen.",
-    "halloween": "Najaarswandeling & Halloween Feest",
+    "easterinfo": "Breng je goede humeur mee en vier Pasen met je buurtgenoten. In onze grote tent zijn er drankjes en snacks, en kun je genieten bij de vuurkorven of dansen.",
+    "halloween": "Najaarswandeling & Halloweenfeest",
     "halloweendate": "29/10/2022",
-    "halloweeninfo": "Breng je goed humeur en nog beter je costuum en vier met je buurtjes Halloween. In onze grote tent zal je drankjes en snacks terugvinden terwijl jij je kan opwarmen aan onze vuurtjes of door te dansen.",
+    "halloweeninfo": "Breng je goede humeur en een geweldig kostuum mee om Halloween met je buurtgenoten te vieren. In onze grote tent zijn drankjes en snacks, en kun je genieten bij de vuurkorven of dansen.",
     "bbq": "Zomer BBQ",
     "bbqdate": "12/06/2022",
-    "bbqinfo": "Breng je goed humeur en geniet mee met ons in de zon met een lekkere BBQ. In onze grote tent zal je gezellige kunnen genieten van muziek en iets fris en lekkers.",
+    "bbqinfo": "Breng je goede humeur mee en geniet samen met ons van de zon tijdens een heerlijke BBQ. In onze grote tent kun je genieten van muziek en een verfrissend drankje.",
     "pizza": "Summer Pizza Party",
     "pizzadate": "24/06/2022",
-    "pizzainfo": "Bring your good mood and join our big Pizza event. In our big tent you will find shade and music as you enjoy our variety of cold drinks and pizza assortments."
+    "pizzainfo": "Breng je goede humeur mee en doe mee aan ons grote pizza-evenement. In onze grote tent vind je schaduw en muziek terwijl je geniet van een assortiment koude drankjes en pizza's."
   },
   "sponsorship": {
-    "title": "Sponseren",
-    "info": "Depot Rato Events is een vereniging zonder winst dat je kan sponseren als persoon of als bedrijf. Afhankelijk van de vorm van sponseren, zullen wij de sponsor kunnen voorzien van reclame op onze website and Sociale Media of de sponsor kan kiezen uit een varia van items in ruil voor hun gifte."
+    "title": "Sponsoring",
+    "info": "Depot Rato Events is een vereniging zonder winstoogmerk die je kunt sponsoren als individu of bedrijf. Afhankelijk van de vorm van sponsoring kunnen wij de sponsor voorzien van reclame op onze website en sociale media, of kan de sponsor kiezen uit verschillende items in ruil voor hun bijdrage."
   }
 }
