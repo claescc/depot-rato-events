@@ -143,6 +143,25 @@ input[type=search]::-ms-clear {
       @apply col-span-3 
     }
 
+    .museum-disclaimer {
+      @apply mx-auto mb-8 w-full max-w-3xl px-4 border border-fuschia-600 rounded-lg;
+    }
+    .museum-disclaimer-content {
+      @apply flex items-start gap-4;
+    }
+    .museum-disclaimer-icon {
+      @apply h-12 w-12 flex-shrink-0;
+    }
+    .museum-disclaimer-title {
+      @apply text-xl py-2 font-bold text-fuschia-600 uppercase;
+    }
+    .museum-disclaimer-text {
+      @apply text-justify py-2;
+    }
+    .museum-disclaimer-link {
+      @apply underline hover:text-fuschia-600;
+    }
+
     .btn-preregister {
       @apply flex mx-auto hover:bg-roze-500 bg-teal-300 text-white border-0 py-2 px-8 focus:outline-none rounded text-lg cursor-pointer
     }
@@ -167,4 +186,3 @@ input[type=search]::-ms-clear {
     }
   }
  
-  

@@ -14,9 +14,9 @@
     "group": "Groep",
     "events": "Evenementen",
     "socialmedia": "Sociale Media",
-    "legal": "Wetgeving",
-    "about": "Over Ons",
-    "joinus": "Lid Worden",
+    "legal": "Juridisch",
+    "about": "Over",
+    "joinus": "Doe Mee",
     "calendar": "Kalender",
     "media": "Media",
     "facebook": "Facebook",
@@ -28,72 +28,73 @@
     "claescc": "CLAESCC PRODUCTIONS. Alle rechten voorbehouden."
   },
   "disclaimer": {
-    "title": "Disclaimer",
-    "text": "De informatie op deze website wordt verstrekt zonder enige garantie. Depot Rato Events is niet aansprakelijk voor eventuele fouten of onvolledigheden."
+    "museum": "Mechels Erfgoed & Archief - Depot Rato",
+    "museumtxt": "Depot Rato is het officiële cultureel erfgoed- en archiefcentrum van Mechelen, gehuisvest in twee prachtig gerestaureerde pakhuizen van de voormalige Société Rateau in Muizen. Het bewaart duizenden culturele artefacten, archeologische vondsten, kunstwerken, historische documenten en bibliotheekcollecties. Toegewijd aan het behoud van de erfenis van de stad, biedt het depot conserveringsdiensten, rondleidingen en erfgoedgerichte evenementen.",
+    "museumlink": "Bezoek de officiële website van Depot Rato Museum"
   },
   "home": {
-    "dre": "Depot Rato Events",
-    "dretxt": "Depot Rato is ontstaan uit een idee dat is uitgegroeid tot een bloeiende gemeenschap.",
+    "dre": "Depot Rato Evenementen",
+    "dretxt": "Depot Rato Evenementen begon als een grassroots-initiatief van een kleine groep buren die de gemeenschap wilden verenigen via intieme bijeenkomsten. Deze evenementen stelden bewoners in staat om te verbinden over eten en drinken in een gastvrije sfeer. Vandaag is deze visie uitgegroeid tot een levendige gemeenschap die grootschaligere evenementen organiseert die onze groeiende buurt vieren en versterken.",
     "neighbourhood": "De Buurt",
-    "neightxt": "Onze buurt wordt gevormd door de bewoners van Muizen, die samen een warme en betrokken gemeenschap vormen.",
+    "neightxt": "Onze gemeenschap bestaat uit bewoners van Muizen, Mechelen, die wonen in en rond Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg en nabijgelegen gebieden. Iedereen die dichtbij woont is van harte uitgenodigd om deel te nemen aan toekomstige evenementen en vieringen, en zo een sterke, inclusieve buurtsfeer te bevorderen.",
     "events": "Evenementen",
-    "eventtxt": "We organiseren diverse evenementen die de buurt samenbrengen en het gemeenschapsgevoel versterken."
+    "eventtxt": "Door de jaren heen hebben we een divers aanbod aan evenementen georganiseerd, zowel bij Depot Rato als elders. Van feestelijke wandelingen in lokale parken tot seizoensgebonden bijeenkomsten zoals nieuwjaarsborrels, paasvieringen en zomerbarbecues, Depot Rato Evenementen biedt iets voor alle leeftijden. We blijven creatieve nieuwe ervaringen ontwikkelen—als je een idee hebt, horen we dat graag of verwelkomen we je in ons team."
   },
   "calendar": {
     "all": "Al Onze Evenementen",
-    "allinfo": "Een volledige verzameling van al onze evenementen. We streven ernaar de data consistent te houden voor maximale aanwezigheid. In de toekomst zullen er nieuwe initiatieven worden toegevoegd. Heb jij een leuk idee? Laat het ons weten!"
+    "allinfo": "Ontdek onze volledige reeks evenementen. We streven ernaar deze elk jaar op consistente data te organiseren om maximale deelname te garanderen. Blijf op de hoogte van spannende nieuwe initiatieven, en als je ideeën hebt, deel ze gerust met ons!"
   },
   "media": {
     "all": "Al Onze Media",
-    "allinfo": "Een uitgebreide collectie van al onze media. Nieuwe initiatieven worden in de toekomst toegevoegd. Heb jij een leuk idee? Laat het ons weten!",
+    "allinfo": "Blader door onze complete collectie mediacontent. We breiden ons aanbod voortdurend uit, dus als je creatieve suggesties hebt, neem gerust contact op!",
     "feed": "Depot Rato Media Feed",
-    "feedinfo": "Bekijk onze laatste berichten op sociale media."
+    "feedinfo": "Bekijk de laatste updates en berichten van onze socialmediakanalen."
   },
   "contact": {
     "us": "Contacteer Ons",
-    "infotxt": "Voor vragen, opmerkingen of leuke ideeën...",
-    "joinus": "Word Lid",
-    "jointxt": "Wil je deel uitmaken van onze community? Sluit je dan bij ons aan!",
-    "meetteam": "Ontmoet Het Events Team",
-    "orgmembers": "Organiserende Leden",
+    "infotxt": "Voor vragen, feedback of spannende ideeën voor toekomstige initiatieven, gebruik de onderstaande contactgegevens of vul ons contactformulier in. We staan klaar om te helpen en horen graag van je.",
+    "joinus": "Doe Mee",
+    "jointxt": "Onze gemeenschap omvat bewoners van Muizen, Mechelen, rond Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg en nabijgelegen gebieden. Als je dichtbij woont en deel wilt uitmaken van onze levendige gemeenschap, verwelkomen we je graag bij aankomende evenementen en bijeenkomsten.",
+    "meetteam": "Ontmoet Het Evenemententeam",
+    "orgmembers": "Organisatieleden",
     "orgvolunteers": "Vrijwilligers"
   },
   "form": {
     "firstname": "Voornaam",
     "lastname": "Achternaam",
-    "phone": "Telefoonnummer",
-    "email": "E-mailadres",
+    "phone": "Telefoon",
+    "email": "E-mail",
     "message": "Bericht",
-    "submit": "Versturen"
+    "submit": "Verzenden"
   },
   "hero": {
-    "dre": "Depot Rato Events",
-    "dreline": "Maak tijd voor plezier"
+    "dre": "Depot Rato Evenementen",
+    "dreline": "Maak tijd voor plezier en verbondenheid"
   },
   "events": {
-    "upcoming": "Eerstvolgende Evenement",
-    "preregbtn": "Nu Inschrijven!",
-    "preregister": "Geïnteresseerd in ons evenement?",
-    "preregisterinfo": "Schrijf je in via onderstaande knop:",
-    "newyear": "Nieuwjaarsdrink",
+    "upcoming": "Volgend Komend Evenement",
+    "preregbtn": "Registreer Nu!",
+    "preregister": "Geïnteresseerd in ons volgende evenement?",
+    "preregisterinfo": "Beveilig je plaats door op onderstaande knop te klikken:",
+    "newyear": "Nieuwjaarsviering",
     "nydate": "14/01/2023",
-    "location": "Depot Rato Binnenplein",
-    "nyinfo": "Breng je sjaal en handschoenen mee en vier het nieuwe jaar met je buurtgenoten. In onze grote tent vind je drankjes en snacks, terwijl je kunt opwarmen bij de vuurkorven of dansen.",
-    "easter": "Paasfeest",
+    "location": "Depot Rato Plein",
+    "nyinfo": "Doe je sjaal en wanten aan en vier het nieuwe jaar samen met je buren. Geniet van drankjes en snacks in onze ruime tent, warm je aan het vuur of dans de avond weg.",
+    "easter": "Paasviering",
     "easterdate": "15/04/2023",
-    "easterinfo": "Breng je goede humeur mee en vier Pasen met je buurtgenoten. In onze grote tent zijn er drankjes en snacks, en kun je genieten bij de vuurkorven of dansen.",
-    "halloween": "Najaarswandeling & Halloweenfeest",
+    "easterinfo": "Breng je vrolijke geest mee en vier Pasen met je buren. Warm op bij het vuur of dans onder onze grote tent terwijl je geniet van drankjes en snacks.",
+    "halloween": "Herfstwandeling & Halloweenfeest",
     "halloweendate": "29/10/2022",
-    "halloweeninfo": "Breng je goede humeur en een geweldig kostuum mee om Halloween met je buurtgenoten te vieren. In onze grote tent zijn drankjes en snacks, en kun je genieten bij de vuurkorven of dansen.",
+    "halloweeninfo": "Kom verkleed in je beste kostuum en vier een feestelijk Halloween. Geniet van drankjes en snacks in onze tent, warm je aan het vuur en dans de hele avond.",
     "bbq": "Zomer BBQ",
     "bbqdate": "12/06/2022",
-    "bbqinfo": "Breng je goede humeur mee en geniet samen met ons van de zon tijdens een heerlijke BBQ. In onze grote tent kun je genieten van muziek en een verfrissend drankje.",
-    "pizza": "Summer Pizza Party",
+    "bbqinfo": "Doe mee aan een levendige zomer BBQ. Ontspan in onze schaduwrijke tent met muziek, geniet van diverse koude dranken en heerlijke BBQ-gerechten.",
+    "pizza": "Zomer Pizza Party",
     "pizzadate": "24/06/2022",
-    "pizzainfo": "Breng je goede humeur mee en doe mee aan ons grote pizza-evenement. In onze grote tent vind je schaduw en muziek terwijl je geniet van een assortiment koude drankjes en pizza's."
+    "pizzainfo": "Vier de zomer met ons op ons pizzafeest. Geniet van muziek en drankjes in onze schaduwrijke tent terwijl je smult van diverse lekkere pizza's."
   },
   "sponsorship": {
     "title": "Sponsoring",
-    "info": "Depot Rato Events is een vereniging zonder winstoogmerk die je kunt sponsoren als individu of bedrijf. Afhankelijk van de vorm van sponsoring kunnen wij de sponsor voorzien van reclame op onze website en sociale media, of kan de sponsor kiezen uit verschillende items in ruil voor hun bijdrage."
+    "info": "Depot Rato Events is een non-profitorganisatie die sponsoring van particulieren en bedrijven verwelkomt. Afhankelijk van het sponsorniveau bieden wij advertentiemogelijkheden op onze sociale mediakanalen en website, of een selectie van exclusieve items als blijk van waardering voor uw steun."
   }
 }
