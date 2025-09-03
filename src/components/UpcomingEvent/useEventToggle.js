@@ -10,7 +10,7 @@ export const useEventToggle = () => {
       eventdate: t("events.nydate"),
       eventlocation: t("events.location"),
       eventinformation: t("events.nyinfo"),
-      showevent: false,
+      showevent: true,
     },
     {
       folder: "event-images/easter.jpg",
@@ -26,7 +26,7 @@ export const useEventToggle = () => {
       eventdate: t("events.pizzadate"),
       eventlocation: t("events.location"),
       eventinformation: t("events.pizzainfo"),
-      showevent: true,
+      showevent: false,
     },
 
     {
