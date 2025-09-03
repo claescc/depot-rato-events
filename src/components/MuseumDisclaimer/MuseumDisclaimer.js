@@ -26,6 +26,10 @@ export default function MuseumDisclaimer() {
                             {t("disclaimer.museumlink")}
                         </a>
                     </div>
+                    <div className="dre-aligna museum-disclaimer-text">
+                        Adres: Leuvensesteenweg 476, 2800 Mechelen<br />
+                        E-mail: <a href="mailto:depotrato@mechelen.be" className="museum-disclaimer-link">depotrato@mechelen.be</a>
+                    </div>
                 </div>
             </div>
 
