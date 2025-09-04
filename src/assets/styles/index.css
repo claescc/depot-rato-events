@@ -144,14 +144,15 @@ input[type=search]::-ms-clear {
     }
 
     /* Museum disclaimer (cleaned, two-column layout) */
-    .museum-disclaimer { @apply mx-auto mb-8 w-full max-w-5xl px-4 border border-fuschia-600 rounded-lg; }
-    .museum-disclaimer-content { @apply flex items-stretch gap-6 py-2; }
+    .museum-disclaimer { @apply mx-auto mb-8 w-[90%] max-w-5xl px-4 border border-fuschia-600 rounded-lg; }
+    .museum-disclaimer-content { @apply flex flex-col md:flex-row items-stretch gap-6 py-2; }
     .museum-disclaimer-icon { @apply h-12 w-12 flex-shrink-0; }
     .museum-disclaimer-title { @apply text-xl py-2 font-bold text-fuschia-600 uppercase; }
     .museum-disclaimer-text { @apply text-justify py-2; }
     .museum-disclaimer-link { @apply underline hover:text-fuschia-600; }
-    .museum-disclaimer-body { @apply flex-1 self-stretch; }
-    .museum-disclaimer-image { @apply w-80 md:w-96 self-stretch overflow-hidden; }
+    .museum-disclaimer-body { @apply flex-1 self-stretch order-1; }
+    .museum-disclaimer-image { @apply w-full md:w-96 self-stretch overflow-hidden order-2; }
+    .museum-disclaimer-image img { @apply w-full h-56 sm:h-64 md:h-full object-cover rounded-lg; }
 
     .btn-preregister {
       @apply flex mx-auto hover:bg-roze-500 bg-teal-300 text-white border-0 py-2 px-8 focus:outline-none rounded text-lg cursor-pointer
