@@ -144,7 +144,7 @@ input[type=search]::-ms-clear {
     }
 
     /* Museum disclaimer (cleaned, two-column layout) */
-    .museum-disclaimer { @apply mx-auto mb-8 w-[90%] max-w-5xl px-4 border border-fuschia-600 rounded-lg; }
+    .museum-disclaimer { @apply mx-auto mb-8 w-[90%] max-w-6xl rounded-2xl border border-fuschia-600/20 bg-white px-5 py-5 shadow-lg sm:px-8; }
     .museum-disclaimer-content { @apply flex flex-col md:flex-row items-stretch gap-6 py-2; }
     .museum-disclaimer-icon { @apply h-12 w-12 flex-shrink-0; }
     .museum-disclaimer-title { @apply text-xl py-2 font-bold text-fuschia-600 uppercase; }
@@ -166,9 +166,6 @@ input[type=search]::-ms-clear {
     }
     .btn-secondary {
       @apply flex text-green-500 hover:text-mint-200 py-2 px-8 border hover:border-mint-200  rounded;
-    }
-    .form-inventory {
-      @apply flex flex-row flex-wrap justify-between gap-4 py-4
     }
     .form-input {
       @apply w-full rounded border border-green-500 focus:border-mint-200 text-base outline-none text-grey-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out;

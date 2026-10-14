@@ -1,4 +1,3 @@
-import ComponentSpacer from "../../components/ComponentSpacer/ComponentSpacer"
 import Hero from "../../components/Hero/Hero"
 import PreRegisterForEvent from "../../components/PreRegisterForEvent/PreRegisterForEvent"
 import UpcomingEvent from "../../components/UpcomingEvent/UpcomingEvent"
@@ -9,19 +8,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ComponentSpacer />
-
-     <MuseumDisclaimer />
-      <ComponentSpacer />
-     
+      <MuseumDisclaimer />
       <Welcome />
-      <ComponentSpacer />
-
       <UpcomingEvent />
-      <ComponentSpacer />
-
       <PreRegisterForEvent />
-      <ComponentSpacer />
     </>
   )
 }

@@ -7,17 +7,21 @@ export default function NavBar() {
   const { t } = useTranslation()
   const [navbar, setNavbar] = useState(false)
   return (
-    <nav className="w-full  bg-green-500 shadow">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-        <div>
+    <nav className="relative z-20 w-full border-b border-white/10 bg-green-700 text-white shadow-lg">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-5 py-3 sm:px-8 md:flex-nowrap md:py-4">
+        <div className="w-full md:w-auto">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="/home" className="bg-drelogo bg-center block bg-cover">
-              <div className="h-10 w-28">&nbsp;</div>
-            </a>
+            <Link to="/home" aria-label={t("home.dre")} className="bg-drelogo block h-11 w-32 bg-contain bg-left bg-no-repeat">
+              <span className="sr-only">{t("home.dre")}</span>
+            </Link>
 
             <div className="md:hidden">
               <button
-                className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
+                type="button"
+                className="rounded-lg p-2 text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-mint-100"
+                aria-label="Toggle navigation"
+                aria-expanded={navbar}
+                aria-controls="primary-navigation"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -44,24 +48,27 @@ export default function NavBar() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="w-full md:w-auto">
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}
+            id="primary-navigation"
+            className={`w-full pt-5 md:w-auto md:pt-0 ${navbar ? "block" : "hidden"} md:block`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <CustomLink to="/home" className="text-lg ">
+            <ul className="flex flex-col gap-5 md:flex-row md:items-center md:gap-8">
+              <CustomLink to="/home" className="text-base">
                 {t("navigation.home")}
               </CustomLink>
-              <CustomLink to="/calendar" className="text-lg ">
+              <CustomLink to="/calendar" className="text-base">
                 {t("navigation.calendar")}
               </CustomLink>
-              <CustomLink to="/media" className="text-lg ">
+              <CustomLink to="/media" className="text-base">
                 {t("navigation.media")}
               </CustomLink>
-              <CustomLink to="/contact" className="text-lg ">
+              <CustomLink to="/contact" className="text-base">
                 {t("navigation.contact")}
               </CustomLink>
-              <LanguageSelect />
+              <li className="md:pl-2">
+                <LanguageSelect />
+              </li>
             </ul>
           </div>
         </div>
@@ -75,12 +82,12 @@ export function CustomLink({ to, children, ...props }) {
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
   // get all current classes out of props and create concat of all classes
-  const navClass = "text-white hover:text-mint-200 " + props.className
-  const navClassActive = "active text-mint-100 hover:text-mint-200 " + props.className
+  const navClass = "text-white/80 transition-colors hover:text-white " + props.className
+  const navClassActive = "active text-mint-100 transition-colors hover:text-white " + props.className
 
   return (
     <li className={isActive ? navClassActive : navClass}>
-      <Link to={to}>{children}</Link>
+      <Link to={to} onClick={props.onClick}>{children}</Link>
     </li>
   )
 }
