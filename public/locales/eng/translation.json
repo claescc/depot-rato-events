@@ -22,21 +22,31 @@
     "facebook": "Facebook",
     "instagram": "Instagram",
     "tiktok": "TikTok",
-    "twitter": "Twitter",
+    "twitter": "X",
     "contact": "Contact",
     "privacypolicy": "Privacy Policy",
     "claescc": "CLAESCC PRODUCTIONS. All Rights Reserved."
   },
  "disclaimer": {
-  "museum": "Mechelen Heritage & Archive - Depot Rato",
-  "museumtxt": "Depot Rato serves as Mechelen’s official cultural heritage and archive center, housed within two beautifully restored warehouses of the former Société Rateau in Muizen. It preserves thousands of cultural artifacts, archaeological finds, artworks, historical documents, and library collections. Committed to safeguarding the city’s legacy, the depot offers conservation services, guided tours, and heritage-focused events.",
-  "museumlink": "Explore the official Depot Rato Museum website"
+  "museum": "Looking for the Depot Rato museum?",
+  "museumtxt": "This website is for neighbourhood events. For official information about Mechelen Heritage & Archive, opening hours and visits, head to the city's museum website.",
+  "museumlink": "Visit the museum website"
   },
   "home": {
     "dre": "Depot Rato Events",
     "dretxt": "Depot Rato Events began as a grassroots initiative by a small group of neighbours aiming to unite the community through intimate gatherings. These events allowed residents to connect over food and drinks in a welcoming atmosphere. Today, this vision has blossomed into a vibrant community, organizing larger-scale events that celebrate and strengthen our growing neighbourhood.",
     "neighbourhood": "The Neighbourhood",
     "neightxt": "Our community consists of residents from Muizen, Mechelen, living in and around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, and nearby areas. Everyone living nearby is warmly invited to join us in future events and celebrations, fostering a strong, inclusive neighbourhood spirit.",
+    "communityTitle": "Join the neighborhood community",
+    "communityInfo": "Live in the area? Join our open Facebook group for local residents, or connect with neighbors in our WhatsApp group.",
+    "facebookGroup": "Join the Facebook group",
+    "whatsappGroup": "Join the WhatsApp group",
+    "photoRenderAlt": "Architectural rendering of the new neighborhood by Depot Rato",
+    "photoRenderCaption": "A new neighborhood growing around Depot Rato.",
+    "photoAerialAlt": "Aerial view over the neighborhood near Depot Rato",
+    "photoAerialCaption": "A view of the neighborhood from above.",
+    "photoOverviewAlt": "Wide aerial view of Depot Rato and the surrounding neighborhood",
+    "photoOverviewCaption": "Depot Rato among the homes, green spaces and railway of Muizen.",
     "events": "Events",
     "eventtxt": "Over the years, we’ve hosted a diverse range of events, both at Depot Rato and offsite. From festive walks in local parks to seasonal gatherings like New Year’s drinks, Easter celebrations, and summer BBQs, Depot Rato Events offers something for all ages. We’re continuously crafting creative new experiences—if you have an idea, we’d love to hear from you or welcome you to join our team."
   },
@@ -45,10 +55,16 @@
     "allinfo": "Discover our full lineup of events. We aim to hold these on consistent dates each year to maximize participation. Stay tuned for exciting new initiatives, and if you have ideas, please share them with us!"
   },
   "media": {
-    "all": "All Our Media",
-    "allinfo": "Browse our complete collection of media content. We’re constantly expanding our offerings, so if you have creative suggestions, don’t hesitate to reach out!",
-    "feed": "Depot Rato Media Feed",
-    "feedinfo": "Catch the latest updates and posts from our social media channels."
+    "all": "Follow Depot Rato Events",
+    "allinfo": "Our latest event news, photos and neighbourhood updates are on social media. Choose a channel to keep in touch.",
+    "feed": "Find us on social media",
+    "feedinfo": "Follow a channel for event announcements, photos and moments from the neighbourhood.",
+    "facebookInfo": "Community news, event announcements and updates.",
+    "instagramInfo": "Photos and moments from our neighbourhood events.",
+    "tiktokInfo": "Short videos and highlights from our events.",
+    "x": "X",
+    "xInfo": "Quick updates and announcements from Depot Rato Events.",
+    "visitChannel": "Visit channel"
   },
 
   "contact": {

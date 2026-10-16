@@ -49,7 +49,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="transition-colors hover:text-mint-100">
-              <a href="https://twitter.com/DepotRatoEvents" target="_blank" rel="noreferrer">
+              <a href="https://x.com/DepotRatoEvents" target="_blank" rel="noreferrer">
                 {t("footer.twitter")}
               </a>
             </li>

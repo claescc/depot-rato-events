@@ -9,12 +9,9 @@ This document explains how to set up optional environment variables for local de
 Create a file named `.env.local` in the **root** of your project (same level as `package.json`).
 
 ### 2. Add keys for the integrations you use
-Firebase is not used by the website. Add only the credentials for the optional email, Instagram, or reCAPTCHA integrations you plan to use:
+Firebase and the Instagram API are not used by the website. Add only the credentials for the optional email or reCAPTCHA integrations you plan to use:
 
 ```dotenv
-REACT_APP_DRE_INSTAGRAM_APP_ID=
-REACT_APP_DRE_INSTAGRAM_CLIENT_ID=
-REACT_APP_DRE_INSTAGRAM_TOKEN=
 REACT_APP_DRE_MAIL_PUBLIC_KEY=
 REACT_APP_DRE_MAIL_SERVICE_ID=
 REACT_APP_DRE_MAIL_TEMPLATE_ID=

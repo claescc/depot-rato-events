@@ -7,8 +7,8 @@ import MuseumDisclaimer from "../../components/MuseumDisclaimer/MuseumDisclaimer
 export default function Home() {
   return (
     <>
-      <Hero />
       <MuseumDisclaimer />
+      <Hero />
       <Welcome />
       <UpcomingEvent />
       <PreRegisterForEvent />

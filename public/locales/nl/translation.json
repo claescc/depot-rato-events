@@ -22,21 +22,31 @@
     "facebook": "Facebook",
     "instagram": "Instagram",
     "tiktok": "TikTok",
-    "twitter": "Twitter",
+    "twitter": "X",
     "contact": "Contact",
     "privacypolicy": "Privacybeleid",
     "claescc": "CLAESCC PRODUCTIONS. Alle rechten voorbehouden."
   },
   "disclaimer": {
-    "museum": "Mechels Erfgoed & Archief - Depot Rato",
-    "museumtxt": "Depot Rato is het officiële cultureel erfgoed- en archiefcentrum van Mechelen, gehuisvest in twee prachtig gerestaureerde pakhuizen van de voormalige Société Rateau in Muizen. Het bewaart duizenden culturele artefacten, archeologische vondsten, kunstwerken, historische documenten en bibliotheekcollecties. Toegewijd aan het behoud van de erfenis van de stad, biedt het depot conserveringsdiensten, rondleidingen en erfgoedgerichte evenementen.",
-    "museumlink": "Bezoek de officiële website van Depot Rato Museum"
+    "museum": "Op zoek naar het museum Depot Rato?",
+    "museumtxt": "Deze website gaat over buurtactiviteiten. Voor officiële informatie over Mechels Erfgoed & Archief, openingsuren en bezoeken ga je naar de website van de stad.",
+    "museumlink": "Bezoek de museumwebsite"
   },
   "home": {
     "dre": "Depot Rato Evenementen",
     "dretxt": "Depot Rato Evenementen begon als een grassroots-initiatief van een kleine groep buren die de gemeenschap wilden verenigen via intieme bijeenkomsten. Deze evenementen stelden bewoners in staat om te verbinden over eten en drinken in een gastvrije sfeer. Vandaag is deze visie uitgegroeid tot een levendige gemeenschap die grootschaligere evenementen organiseert die onze groeiende buurt vieren en versterken.",
     "neighbourhood": "De Buurt",
     "neightxt": "Onze gemeenschap bestaat uit bewoners van Muizen, Mechelen, die wonen in en rond Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg en nabijgelegen gebieden. Iedereen die dichtbij woont is van harte uitgenodigd om deel te nemen aan toekomstige evenementen en vieringen, en zo een sterke, inclusieve buurtsfeer te bevorderen.",
+    "communityTitle": "Sluit je aan bij de buurtgemeenschap",
+    "communityInfo": "Woon je in de buurt? Sluit je aan bij onze open Facebookgroep voor buurtbewoners of kom in contact met je buren via onze WhatsApp-groep.",
+    "facebookGroup": "Naar de Facebookgroep",
+    "whatsappGroup": "Naar de WhatsApp-groep",
+    "photoRenderAlt": "Architecturale visualisatie van de nieuwe buurt bij Depot Rato",
+    "photoRenderCaption": "Een nieuwe buurt groeit rond Depot Rato.",
+    "photoAerialAlt": "Luchtfoto van de buurt bij Depot Rato",
+    "photoAerialCaption": "Een blik op de buurt van bovenaf.",
+    "photoOverviewAlt": "Panoramische luchtfoto van Depot Rato en de omliggende buurt",
+    "photoOverviewCaption": "Depot Rato tussen de woningen, groene ruimtes en spoorweg van Muizen.",
     "events": "Evenementen",
     "eventtxt": "Door de jaren heen hebben we een divers aanbod aan evenementen georganiseerd, zowel bij Depot Rato als elders. Van feestelijke wandelingen in lokale parken tot seizoensgebonden bijeenkomsten zoals nieuwjaarsborrels, paasvieringen en zomerbarbecues, Depot Rato Evenementen biedt iets voor alle leeftijden. We blijven creatieve nieuwe ervaringen ontwikkelen—als je een idee hebt, horen we dat graag of verwelkomen we je in ons team."
   },
@@ -45,10 +55,16 @@
     "allinfo": "Ontdek onze volledige reeks evenementen. We streven ernaar deze elk jaar op consistente data te organiseren om maximale deelname te garanderen. Blijf op de hoogte van spannende nieuwe initiatieven, en als je ideeën hebt, deel ze gerust met ons!"
   },
   "media": {
-    "all": "Al Onze Media",
-    "allinfo": "Blader door onze complete collectie mediacontent. We breiden ons aanbod voortdurend uit, dus als je creatieve suggesties hebt, neem gerust contact op!",
-    "feed": "Depot Rato Media Feed",
-    "feedinfo": "Bekijk de laatste updates en berichten van onze socialmediakanalen."
+    "all": "Volg Depot Rato Events",
+    "allinfo": "Het laatste nieuws over evenementen, foto's en updates uit de buurt vind je op onze sociale media. Kies een kanaal en blijf op de hoogte.",
+    "feed": "Vind ons op sociale media",
+    "feedinfo": "Volg een kanaal voor aankondigingen, foto's en momenten uit de buurt.",
+    "facebookInfo": "Nieuws uit de buurt, aankondigingen en updates over evenementen.",
+    "instagramInfo": "Foto's en momenten van onze buurtactiviteiten.",
+    "tiktokInfo": "Korte video's en hoogtepunten van onze evenementen.",
+    "x": "X",
+    "xInfo": "Korte updates en aankondigingen van Depot Rato Events.",
+    "visitChannel": "Bekijk kanaal"
   },
   "contact": {
     "us": "Contacteer Ons",
