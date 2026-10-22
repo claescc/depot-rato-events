@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <MuseumDisclaimer />
       <Hero />
-      <section aria-labelledby="volunteer-callout-title" className="border-y-4 border-fuschia-600 bg-fuschia-500 px-5 py-12 sm:px-8 sm:py-16">
+      <section aria-labelledby="volunteer-callout-title" className="border-y-4 border-pop-pink bg-pop-pink px-5 py-12 sm:px-8 sm:py-16">
         <div className="mx-auto grid max-w-7xl items-center gap-8 md:grid-cols-2 md:gap-12">
           <img
             src={joinOurTeamPoster}
@@ -32,7 +32,7 @@ export default function Home() {
             <p className="mt-3 font-moonbold leading-7 text-green-800">{t("home.crewReassurance")}</p>
             <Link
               to="/contact#volunteer-contact"
-              className="mt-6 inline-flex shrink-0 items-center justify-center rounded-full bg-green-800 px-7 py-3 font-moonbold text-white transition hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-800 focus-visible:outline-offset-2"
+              className="mt-6 inline-flex shrink-0 items-center justify-center rounded-full bg-pop-green px-7 py-3 font-moonbold text-green-800 transition hover:bg-pop-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-800 focus-visible:outline-offset-2"
             >
               {t("home.crewAction")}
             </Link>

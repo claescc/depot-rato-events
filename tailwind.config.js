@@ -29,6 +29,10 @@ module.exports = {
       "berry-200": "#B95F89",
       "purple-600": "#542E71",
       "purple-300": "#6A66A3",
+      "pop-yellow": "#FDE145",
+      "pop-blue": "#02CBFD",
+      "pop-pink": "#FB32A2",
+      "pop-green": "#03E4C6",
     },
     backgroundImage: {
       homehero: "url('../../assets/images/bannerThinDark.png')",

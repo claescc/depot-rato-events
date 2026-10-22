@@ -4,10 +4,12 @@ const SponsorInfo = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="dre-container">
-      <div className="dre-title">{t("sponsorship.title")}</div>
-      <div className="dre-aligna">{t("sponsorship.info")}</div>
-    </div>
+    <section className="px-5 py-12 sm:px-8 sm:py-16">
+      <div className="mx-auto max-w-7xl rounded-3xl bg-green-700 p-7 text-white sm:p-10">
+        <h2 className="font-moon text-2xl sm:text-3xl">{t("sponsorship.title")}</h2>
+        <p className="mt-3 max-w-4xl leading-7 text-white/80">{t("sponsorship.info")}</p>
+      </div>
+    </section>
   )
 }
 
