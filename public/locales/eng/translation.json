@@ -41,6 +41,11 @@
     "communityInfo": "Live in the area? Join our open Facebook group for local residents, or connect with neighbors in our WhatsApp group.",
     "facebookGroup": "Join the Facebook group",
     "whatsappGroup": "Join the WhatsApp group",
+    "crewEyebrow": "Event team members wanted",
+    "crewTitle": "Help bring neighborhood parties back",
+    "crewInfo": "We’re looking for neighbors to join our volunteer event team. With only two or three people, it’s too much to organize events and do all the work on the day. Help us set up, welcome people, serve food and drinks, handle tickets, or pack everything away.",
+    "crewReassurance": "You don’t have to do it all. Every new member and every helping hand makes a difference.",
+    "crewAction": "Join the event team",
     "photoRenderAlt": "Architectural rendering of the new neighborhood by Depot Rato",
     "photoRenderCaption": "A new neighborhood growing around Depot Rato.",
     "photoAerialAlt": "Aerial view over the neighborhood near Depot Rato",
@@ -69,9 +74,11 @@
 
   "contact": {
     "us": "Contact Us",
-    "infotxt": "For questions, feedback, or exciting ideas for future initiatives, please use the contact details below or fill out our contact form. We’re here to assist and look forward to hearing from you.",
-    "joinus": "Join Us",
-    "jointxt": "Our community includes residents from Muizen, Mechelen, around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg, and nearby areas. If you live close by and want to be part of our vibrant community, we warmly welcome you to join us at upcoming events and gatherings.",
+    "infotxt": "Questions, feedback, ideas, or interested in helping with neighborhood events? Send us a message using the form below. We’d love to hear from you.",
+    "joinus": "Help us bring neighborhood events back",
+    "jointxt": "Depot Rato Events is neighbors helping neighbors in Muizen, Mechelen—including people around Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg and nearby streets. We have had to pause events because a very small team cannot do everything alone. We’re looking for a few more neighbors to help us keep this community connected.",
+    "volunteerTasks": "There are many ways to help: preparing and setting up, welcoming people or handling tickets, serving food and drinks, and packing everything away afterwards. You can help with one shift or one event; there’s no expectation to take on every event or do it all yourself.",
+    "volunteerWelcome": "Every extra pair of hands helps. Tell us what you’d enjoy doing and what amount of time works for you.",
     "meetteam": "Meet The Events Team",
     "orgmembers": "Organization Members",
     "orgvolunteers": "Volunteers"
@@ -82,6 +89,7 @@
     "phone": "Phone",
     "email": "Email",
     "message": "Message",
+    "volunteerHint": "Thinking about volunteering? Tell us what you might like to help with and whether you’re interested in a single shift, one event, or more.",
     "submit": "Send"
   },
   "hero": {

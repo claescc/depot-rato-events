@@ -70,6 +70,7 @@ const ContacthtmlForm = () => {
                   aria-invalid={errors.message ? "true" : "false"}
                   className="form-textarea"
                 ></textarea>
+                <p className="mt-2 text-sm leading-6 text-grey-400">{t("form.volunteerHint")}</p>
                 {errors.message?.type === "required" && (
                   <p className="text-red" role="alert">
                     message is required

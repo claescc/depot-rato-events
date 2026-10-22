@@ -41,6 +41,11 @@
     "communityInfo": "Woon je in de buurt? Sluit je aan bij onze open Facebookgroep voor buurtbewoners of kom in contact met je buren via onze WhatsApp-groep.",
     "facebookGroup": "Naar de Facebookgroep",
     "whatsappGroup": "Naar de WhatsApp-groep",
+    "crewEyebrow": "Nieuwe leden gezocht voor ons evenemententeam",
+    "crewTitle": "Help buurtfeesten weer mogelijk maken",
+    "crewInfo": "We zoeken buren die ons vrijwillige evenemententeam willen versterken. Met maar twee of drie mensen is het te veel om activiteiten te organiseren en op de dag zelf alles te doen. Help mee met opbouwen, mensen verwelkomen, eten en drinken serveren, tickets of opruimen.",
+    "crewReassurance": "Je hoeft niet alles zelf te doen. Elk nieuw lid en elke helpende hand maakt verschil.",
+    "crewAction": "Word lid van het team",
     "photoRenderAlt": "Architecturale visualisatie van de nieuwe buurt bij Depot Rato",
     "photoRenderCaption": "Een nieuwe buurt groeit rond Depot Rato.",
     "photoAerialAlt": "Luchtfoto van de buurt bij Depot Rato",
@@ -68,9 +73,11 @@
   },
   "contact": {
     "us": "Contacteer Ons",
-    "infotxt": "Voor vragen, feedback of spannende ideeën voor toekomstige initiatieven, gebruik de onderstaande contactgegevens of vul ons contactformulier in. We staan klaar om te helpen en horen graag van je.",
-    "joinus": "Doe Mee",
-    "jointxt": "Onze gemeenschap omvat bewoners van Muizen, Mechelen, rond Depot Rato, Durabrik, Lotelingstraat, Leuvensesteenweg en nabijgelegen gebieden. Als je dichtbij woont en deel wilt uitmaken van onze levendige gemeenschap, verwelkomen we je graag bij aankomende evenementen en bijeenkomsten.",
+    "infotxt": "Vragen, feedback, ideeën of interesse om te helpen bij buurtactiviteiten? Stuur ons een bericht via het formulier. We horen graag van je.",
+    "joinus": "Help buurtactiviteiten weer mogelijk maken",
+    "jointxt": "Depot Rato Events is er voor en door buren in Muizen, Mechelen — onder meer rond Depot Rato, Durabrik, de Lotelingstraat, de Leuvensesteenweg en nabijgelegen straten. We hebben activiteiten moeten pauzeren omdat een heel klein team niet alles alleen kan doen. We zoeken extra buurtbewoners die willen helpen om de buurt verbonden te houden.",
+    "volunteerTasks": "Je kunt op allerlei manieren helpen: voorbereiden en opbouwen, bezoekers verwelkomen of tickets helpen regelen, eten en drinken serveren en achteraf alles weer opruimen. Je kunt één shift of één activiteit meehelpen; je hoeft niet bij elke activiteit aanwezig te zijn of alles zelf te doen.",
+    "volunteerWelcome": "Elke extra helpende hand telt. Vertel ons wat je graag zou doen en hoeveel tijd voor jou haalbaar is.",
     "meetteam": "Ontmoet Het Evenemententeam",
     "orgmembers": "Organisatieleden",
     "orgvolunteers": "Vrijwilligers"
@@ -81,6 +88,7 @@
     "phone": "Telefoon",
     "email": "E-mail",
     "message": "Bericht",
+    "volunteerHint": "Wil je misschien vrijwilliger worden? Vertel ons waarmee je zou willen helpen en of je één shift, één activiteit of vaker wilt meedoen.",
     "submit": "Verzenden"
   },
   "hero": {

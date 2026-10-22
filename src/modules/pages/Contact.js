@@ -10,13 +10,11 @@ export default function Contact() {
     <>
       <ComponentSpacer />
       <ContactIntro />
-      <ComponentSpacer />
-      <ContactForm />
-      <ComponentSpacer />
       <JoinUs />
+      <div id="volunteer-contact">
+        <ContactForm />
+      </div>
       <SponsorInfo />
-      <ComponentSpacer />
-      
       <ComponentSpacer />
     </>
   )
