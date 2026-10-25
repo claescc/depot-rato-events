@@ -1,31 +1,31 @@
 import { useTranslation } from "react-i18next"
-import { useEventToggle } from "./useEventToggle"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLocation, faClock, faCircleInfo } from "@fortawesome/free-solid-svg-icons"
-import TableRowIconText from "../TableRowIconText/TableRowIconText"
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "react-router-dom"
 
 const UpcomingEvent = () => {
   const { t } = useTranslation()
-  const toggleEventHomePage = useEventToggle()
 
   return (
-    <section className="bg-green-700 py-16 text-white sm:py-24">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <p className="mb-3 font-moonbold text-sm uppercase tracking-[0.2em] text-mint-100">{t("home.events")}</p>
-        <h2 className="mb-9 font-moon text-3xl uppercase sm:mb-12 sm:text-4xl">{t("events.upcoming")}</h2>
-        <article className="grid overflow-hidden rounded-3xl bg-white text-green-700 shadow-2xl md:grid-cols-2">
-          <div className="flex h-64 flex-col items-center justify-center gap-5 bg-green-100 p-8 text-center md:min-h-[24rem]">
-            <FontAwesomeIcon icon={toggleEventHomePage.icon} className="text-7xl text-green-500 sm:text-8xl" aria-hidden="true" />
-            <span className="font-moon text-xl uppercase tracking-widest text-green-700 sm:text-2xl">{t("home.dre")}</span>
+    <section aria-labelledby="upcoming-events-title" className="bg-green-100/40 px-5 py-14 sm:px-8 sm:py-20">
+      <div className="mx-auto max-w-7xl">
+        <article className="flex flex-col gap-6 rounded-3xl border border-green-200 bg-white p-6 shadow-lg shadow-green-700/5 sm:flex-row sm:items-center sm:p-9">
+          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-pop-yellow text-green-800">
+            <FontAwesomeIcon icon={faCalendarDays} className="text-2xl" aria-hidden="true" />
+          </span>
+          <div className="flex-1">
+            <p className="mb-2 font-moonbold text-xs uppercase tracking-[0.18em] text-green-500">{t("home.events")}</p>
+            <h2 id="upcoming-events-title" className="font-moon text-2xl text-green-700 sm:text-3xl">
+              {t("events.noUpcomingTitle")}
+            </h2>
+            <p className="mt-3 max-w-3xl leading-7 text-grey-400">{t("events.noUpcomingInfo")}</p>
           </div>
-          <div className="flex flex-col justify-center p-6 sm:p-10">
-            <h3 className="mb-6 font-moon text-2xl sm:text-3xl">{toggleEventHomePage.eventname}</h3>
-            <div className="space-y-5 leading-7 text-grey-400">
-              <TableRowIconText icon={faClock} text={toggleEventHomePage.eventdate} />
-              <TableRowIconText icon={faLocation} text={toggleEventHomePage.eventlocation} />
-              <TableRowIconText icon={faCircleInfo} text={toggleEventHomePage.eventinformation} />
-            </div>
-          </div>
+          <Link
+            to="/contact#volunteer-contact"
+            className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-pop-green px-6 py-3 text-center font-moonbold text-green-800 transition hover:bg-pop-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-700 focus-visible:outline-offset-2"
+          >
+            {t("home.crewAction")}
+          </Link>
         </article>
       </div>
     </section>

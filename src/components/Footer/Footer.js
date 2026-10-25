@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-10 px-5 py-12 sm:px-8 md:grid-cols-4 md:py-16">
         <div>
           <h2 className="mb-5 font-moonbold text-sm uppercase tracking-widest text-mint-100">{t("footer.group")}</h2>
-          <ul className="space-y-3 text-sm text-white/75">
+          <ul className="space-y-3 text-sm text-white/75 [&_a]:inline-flex [&_a]:min-h-8 [&_a]:items-center">
             <CustomLink to="/home" className="transition-colors hover:text-mint-100">
               {t("footer.about")}
             </CustomLink>
@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         <div>
           <h2 className="mb-5 font-moonbold text-sm uppercase tracking-widest text-mint-100">{t("footer.events")}</h2>
-          <ul className="space-y-3 text-sm text-white/75">
+          <ul className="space-y-3 text-sm text-white/75 [&_a]:inline-flex [&_a]:min-h-8 [&_a]:items-center">
             <CustomLink to="/calendar" className="transition-colors hover:text-mint-100">
               {t("footer.calendar")}
             </CustomLink>
@@ -34,22 +34,22 @@ export default function Footer() {
           <h2 className="mb-5 font-moonbold text-sm uppercase tracking-widest text-mint-100">{t("footer.socialmedia")}</h2>
           <ul className="space-y-3 text-sm text-white/75">
             <li className="transition-colors hover:text-mint-100">
-              <a href="https://www.facebook.com/profile.php?id=100089286275731" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=100089286275731" target="_blank" rel="noopener noreferrer">
                 {t("footer.facebook")}
               </a>
             </li>
             <li className="transition-colors hover:text-mint-100">
-              <a href="https://www.instagram.com/depotratoevents/" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/depotratoevents/" target="_blank" rel="noopener noreferrer">
                 {t("footer.instagram")}
               </a>
             </li>
             <li className="transition-colors hover:text-mint-100">
-              <a href="https://www.tiktok.com/@depotratoevents" target="_blank" rel="noreferrer">
+              <a href="https://www.tiktok.com/@depotratoevents" target="_blank" rel="noopener noreferrer">
                 {t("footer.tiktok")}
               </a>
             </li>
             <li className="transition-colors hover:text-mint-100">
-              <a href="https://x.com/DepotRatoEvents" target="_blank" rel="noreferrer">
+              <a href="https://x.com/DepotRatoEvents" target="_blank" rel="noopener noreferrer">
                 {t("footer.twitter")}
               </a>
             </li>
@@ -57,7 +57,7 @@ export default function Footer() {
         </div>
         <div>
           <h2 className="mb-5 font-moonbold text-sm uppercase tracking-widest text-mint-100">{t("footer.legal")}</h2>
-          <ul className="space-y-3 text-sm text-white/75">
+          <ul className="space-y-3 text-sm text-white/75 [&_a]:inline-flex [&_a]:min-h-8 [&_a]:items-center">
             <CustomLink to="/legal" className="transition-colors hover:text-mint-100">
               {t("footer.privacypolicy")}
             </CustomLink>

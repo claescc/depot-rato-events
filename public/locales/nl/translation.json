@@ -8,7 +8,9 @@
     "home": "Home",
     "calendar": "Kalender",
     "media": "Media",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Navigatiemenu openen",
+    "closeMenu": "Navigatiemenu sluiten"
   },
   "footer": {
     "group": "Groep",
@@ -54,11 +56,14 @@
     "photoOverviewAlt": "Panoramische luchtfoto van Depot Rato en de omliggende buurt",
     "photoOverviewCaption": "Depot Rato tussen de woningen, groene ruimtes en spoorweg van Muizen.",
     "events": "Evenementen",
-    "eventtxt": "Door de jaren heen hebben we een divers aanbod aan evenementen georganiseerd, zowel bij Depot Rato als elders. Van feestelijke wandelingen in lokale parken tot seizoensgebonden bijeenkomsten zoals nieuwjaarsborrels, paasvieringen en zomerbarbecues, Depot Rato Evenementen biedt iets voor alle leeftijden. We blijven creatieve nieuwe ervaringen ontwikkelen—als je een idee hebt, horen we dat graag of verwelkomen we je in ons team."
+    "eventtxt": "We genoten samen van zomerbarbecues, nieuwjaarsborrels, paasactiviteiten en wandelingen in de buurt. We willen deze bijeenkomsten graag terugbrengen en nieuwe momenten creëren waarop buren elkaar ontmoeten."
   },
   "calendar": {
-    "all": "Al Onze Evenementen",
-    "allinfo": "Ontdek onze volledige reeks evenementen. We streven ernaar deze elk jaar op consistente data te organiseren om maximale deelname te garanderen. Blijf op de hoogte van spannende nieuwe initiatieven, en als je ideeën hebt, deel ze gerust met ons!"
+    "pageTitle": "Buurtactiviteiten",
+    "pageInfo": "Ontdek wat er leeft en welke bijeenkomsten onze buren graag samen beleven.",
+    "ideasLabel": "Onze buurttradities",
+    "all": "Bijeenkomsten die we graag terugbrengen",
+    "allinfo": "Dit zijn enkele momenten waar buren samen van genoten. Er staan nog geen nieuwe activiteiten gepland, maar met extra helpende handen kunnen we ze opnieuw organiseren."
   },
   "media": {
     "all": "Volg Depot Rato Events",
@@ -95,10 +100,13 @@
   },
   "hero": {
     "dre": "Depot Rato Evenementen",
-    "dreline": "Maak tijd voor plezier en verbondenheid"
+    "dreline": "Maak tijd voor plezier en verbondenheid",
+    "intro": "Een buurtinitiatief in Muizen dat ruimte maakt voor plezier en nieuwe ontmoetingen."
   },
   "events": {
     "upcoming": "Volgend Komend Evenement",
+    "noUpcomingTitle": "Er zijn nog geen activiteiten gepland",
+    "noUpcomingInfo": "We kijken ernaar uit om buren opnieuw samen te brengen. Ons vrijwilligersteam heeft extra helpende handen nodig om de volgende activiteit te organiseren.",
     "preregbtn": "Registreer Nu!",
     "preregister": "Geïnteresseerd in ons volgende evenement?",
     "preregisterinfo": "Beveilig je plaats door op onderstaande knop te klikken:",

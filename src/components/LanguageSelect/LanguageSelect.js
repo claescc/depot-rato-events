@@ -8,7 +8,7 @@ const languages = [
 ]
 
 const LanguageSelect = () => {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
 
   const changeLanguage = e => {
     i18n.changeLanguage(e.target.value)
@@ -20,6 +20,7 @@ const LanguageSelect = () => {
       defaultValue={i18next.languages[0]}
       name="languages"
       id="languages"
+      ariaLabel={t("languages.language")}
       items={languages}
       onChange={changeLanguage}
     />

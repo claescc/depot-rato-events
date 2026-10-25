@@ -6,71 +6,61 @@ import LanguageSelect from "../LanguageSelect/LanguageSelect"
 export default function NavBar() {
   const { t } = useTranslation()
   const [navbar, setNavbar] = useState(false)
-  return (
-    <nav className="relative z-20 w-full border-b border-white/10 bg-green-700 text-white shadow-lg">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-5 py-3 sm:px-8 md:flex-nowrap md:py-4">
-        <div className="w-full md:w-auto">
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="/home" aria-label={t("home.dre")} className="bg-drelogo block h-11 w-32 bg-contain bg-left bg-no-repeat">
-              <span className="sr-only">{t("home.dre")}</span>
-            </Link>
 
-            <div className="md:hidden">
-              <button
-                type="button"
-                className="rounded-lg p-2 text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-mint-100"
-                aria-label="Toggle navigation"
-                aria-expanded={navbar}
-                aria-controls="primary-navigation"
-                onClick={() => setNavbar(!navbar)}
+  return (
+    <nav className="sticky top-0 z-40 w-full border-b border-white/10 bg-green-800 text-white shadow-lg shadow-green-800/10">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
+        <Link
+          to="/home"
+          aria-label={t("home.dre")}
+          className="bg-drelogo block h-11 w-32 shrink-0 bg-contain bg-left bg-no-repeat focus-visible:outline focus-visible:outline-2 focus-visible:outline-pop-yellow"
+          onClick={() => setNavbar(false)}
+        >
+          <span className="sr-only">{t("home.dre")}</span>
+        </Link>
+
+        <button
+          type="button"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-pop-yellow md:hidden"
+          aria-label={t(navbar ? "navigation.closeMenu" : "navigation.openMenu")}
+          aria-expanded={navbar}
+          aria-controls="primary-navigation"
+          onClick={() => setNavbar(!navbar)}
+        >
+          {navbar ? (
+            <svg aria-hidden="true" className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" d="m6 6 12 12M18 6 6 18" />
+            </svg>
+          ) : (
+            <svg aria-hidden="true" className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
+
+        <div
+          id="primary-navigation"
+          className={`${navbar ? "block" : "hidden"} absolute inset-x-0 top-full border-b border-white/10 bg-green-800 px-5 pb-5 shadow-xl md:static md:block md:border-0 md:bg-transparent md:p-0 md:shadow-none`}
+        >
+          <ul className="mx-auto flex max-w-7xl flex-col gap-2 md:flex-row md:items-center md:gap-2">
+            <CustomLink to="/home" onClick={() => setNavbar(false)}>{t("navigation.home")}</CustomLink>
+            <CustomLink to="/calendar" onClick={() => setNavbar(false)}>{t("navigation.calendar")}</CustomLink>
+            <CustomLink to="/media" onClick={() => setNavbar(false)}>{t("navigation.media")}</CustomLink>
+            <CustomLink to="/contact" onClick={() => setNavbar(false)}>{t("navigation.contact")}</CustomLink>
+            <li className="pt-2 md:pl-2 md:pt-0">
+              <label className="sr-only" htmlFor="languages">{t("languages.language")}</label>
+              <LanguageSelect />
+            </li>
+            <li className="pt-2 md:pl-2 md:pt-0">
+              <Link
+                to="/contact#volunteer-contact"
+                onClick={() => setNavbar(false)}
+                className="inline-flex min-h-11 w-full items-center justify-center rounded-full bg-pop-green px-5 py-2 font-moonbold text-sm text-green-800 transition hover:bg-pop-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-white md:w-auto"
               >
-                {navbar ? (
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                )}
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="w-full md:w-auto">
-          <div
-            id="primary-navigation"
-            className={`w-full pt-5 md:w-auto md:pt-0 ${navbar ? "block" : "hidden"} md:block`}
-          >
-            <ul className="flex flex-col gap-5 md:flex-row md:items-center md:gap-8">
-              <CustomLink to="/home" className="text-base">
-                {t("navigation.home")}
-              </CustomLink>
-              <CustomLink to="/calendar" className="text-base">
-                {t("navigation.calendar")}
-              </CustomLink>
-              <CustomLink to="/media" className="text-base">
-                {t("navigation.media")}
-              </CustomLink>
-              <CustomLink to="/contact" className="text-base">
-                {t("navigation.contact")}
-              </CustomLink>
-              <li className="md:pl-2">
-                <LanguageSelect />
-              </li>
-            </ul>
-          </div>
+                {t("home.crewAction")}
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -81,13 +71,18 @@ export function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
-  // get all current classes out of props and create concat of all classes
-  const navClass = "text-white/80 transition-colors hover:text-white " + props.className
-  const navClassActive = "active text-mint-100 transition-colors hover:text-white " + props.className
-
   return (
-    <li className={isActive ? navClassActive : navClass}>
-      <Link to={to} onClick={props.onClick}>{children}</Link>
+    <li>
+      <Link
+        to={to}
+        onClick={props.onClick}
+        aria-current={isActive ? "page" : undefined}
+        className={`inline-flex min-h-11 items-center rounded-xl px-4 py-2 text-sm font-moonbold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-pop-yellow ${
+          isActive ? "bg-white/10 text-pop-green" : "text-white/80 hover:bg-white/10 hover:text-white"
+        } ${props.className || ""}`}
+      >
+        {children}
+      </Link>
     </li>
   )
 }

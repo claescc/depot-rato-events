@@ -8,7 +8,9 @@
     "home": "Home",
     "media": "Media",
     "calendar": "Calendar",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "footer": {
     "group": "Group",
@@ -54,11 +56,14 @@
     "photoOverviewAlt": "Wide aerial view of Depot Rato and the surrounding neighborhood",
     "photoOverviewCaption": "Depot Rato among the homes, green spaces and railway of Muizen.",
     "events": "Events",
-    "eventtxt": "Over the years, we’ve hosted a diverse range of events, both at Depot Rato and offsite. From festive walks in local parks to seasonal gatherings like New Year’s drinks, Easter celebrations, and summer BBQs, Depot Rato Events offers something for all ages. We’re continuously crafting creative new experiences—if you have an idea, we’d love to hear from you or welcome you to join our team."
+    "eventtxt": "We’ve shared summer barbecues, New Year’s drinks, Easter celebrations and walks around the neighborhood. We’d love to bring these gatherings back and create new reasons for neighbors to meet."
   },
   "calendar": {
-    "all": "All Our Events",
-    "allinfo": "Discover our full lineup of events. We aim to hold these on consistent dates each year to maximize participation. Stay tuned for exciting new initiatives, and if you have ideas, please share them with us!"
+    "pageTitle": "Neighborhood events",
+    "pageInfo": "Find out what’s happening and explore the gatherings our neighbors love.",
+    "ideasLabel": "Our neighborhood traditions",
+    "all": "Gatherings we’d love to bring back",
+    "allinfo": "These are some of the moments neighbors have enjoyed together. No new events are scheduled yet, but with more helping hands we can bring them back."
   },
   "media": {
     "all": "Follow Depot Rato Events",
@@ -96,10 +101,13 @@
   },
   "hero": {
     "dre": "Depot Rato Events",
-    "dreline": "Make Time for Joy and Connection"
+    "dreline": "Make Time for Joy and Connection",
+    "intro": "A neighbor-led community in Muizen, making space for good times and new connections."
   },
   "events": {
     "upcoming": "Next Upcoming Event",
+    "noUpcomingTitle": "No events scheduled just yet",
+    "noUpcomingInfo": "We’re looking forward to bringing neighbors together again. Our volunteer team needs a few more helping hands before we can plan the next event.",
     "preregbtn": "Register Now!",
     "preregister": "Interested in Our Next Event?",
     "preregisterinfo": "Secure your spot by clicking the button below:",
