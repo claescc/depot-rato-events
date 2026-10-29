@@ -33,13 +33,16 @@ module.exports = {
       "pop-blue": "#02CBFD",
       "pop-pink": "#FB32A2",
       "pop-green": "#03E4C6",
-    },
-    backgroundImage: {
-      homehero: "url('../../assets/images/bannerThinDark.png')",
-      drelogo: "url('../../assets/images/whitedrelogo.png')",
-      emptystate: "url('../../assets/images/emptystate.png')",
+      "facebook-blue": "#1877F2",
+      "instagram-purple": "#833AB4",
+      "tiktok-black": "#050505",
     },
     extend: {
+      backgroundImage: {
+        homehero: "url('../../assets/images/bannerThinDark.png')",
+        drelogo: "url('../../assets/images/whitedrelogo.png')",
+        emptystate: "url('../../assets/images/emptystate.png')",
+      },
       fontFamily: {
         moon: ["MoonLight", "sans-serif"],
         moonbold: ["MoonBold", "sans-serif"],

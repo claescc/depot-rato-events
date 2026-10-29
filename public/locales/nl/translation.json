@@ -67,12 +67,13 @@
   },
   "media": {
     "all": "Volg Depot Rato Events",
-    "allinfo": "Het laatste nieuws over evenementen, foto's en updates uit de buurt vind je op onze sociale media. Kies een kanaal en blijf op de hoogte.",
+    "allinfo": "Ontdek wat er leeft in de buurt, bekijk leuke momenten en blijf op de hoogte. Volg ons op de kanalen die jij graag gebruikt.",
     "feed": "Vind ons op sociale media",
-    "feedinfo": "Volg een kanaal voor aankondigingen, foto's en momenten uit de buurt.",
-    "facebookInfo": "Nieuws uit de buurt, aankondigingen en updates over evenementen.",
-    "instagramInfo": "Foto's en momenten van onze buurtactiviteiten.",
-    "tiktokInfo": "Korte video's en hoogtepunten van onze evenementen.",
+    "socialTitle": "Meer buurtgevoel in je feed",
+    "feedinfo": "Elk kanaal heeft zijn eigen sfeer. Kies je favoriet en praat mee.",
+    "facebookInfo": "Praat mee over lokaal nieuws, activiteiten en verhalen uit onze buurt.",
+    "instagramInfo": "Een kleurrijke blik op onze bijeenkomsten, bekende gezichten en alledaagse momenten rond Depot Rato.",
+    "tiktokInfo": "Korte filmpjes, leuke hoogtepunten en een kijkje achter de schermen in het buurtleven.",
     "x": "X",
     "xInfo": "Korte updates en aankondigingen van Depot Rato Events.",
     "visitChannel": "Bekijk kanaal"

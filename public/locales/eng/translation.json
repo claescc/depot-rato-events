@@ -67,12 +67,13 @@
   },
   "media": {
     "all": "Follow Depot Rato Events",
-    "allinfo": "Our latest event news, photos and neighbourhood updates are on social media. Choose a channel to keep in touch.",
+    "allinfo": "Come say hello, catch the neighborhood highlights, and stay in the loop. Follow along on the platforms you love.",
     "feed": "Find us on social media",
-    "feedinfo": "Follow a channel for event announcements, photos and moments from the neighbourhood.",
-    "facebookInfo": "Community news, event announcements and updates.",
-    "instagramInfo": "Photos and moments from our neighbourhood events.",
-    "tiktokInfo": "Short videos and highlights from our events.",
+    "socialTitle": "A little more neighborhood in your feed",
+    "feedinfo": "Each channel has its own flavor. Pick your favorite and join the conversation.",
+    "facebookInfo": "Join the conversation with local updates, event news, and stories from our neighborhood.",
+    "instagramInfo": "A colorful look at our gatherings, familiar faces, and everyday moments around Depot Rato.",
+    "tiktokInfo": "Quick clips, fun highlights, and a behind-the-scenes peek at neighborhood life.",
     "x": "X",
     "xInfo": "Quick updates and announcements from Depot Rato Events.",
     "visitChannel": "Visit channel"

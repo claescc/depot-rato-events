@@ -12,7 +12,10 @@ const MediaWindow = () => {
       description: t("media.facebookInfo"),
       icon: faFacebook,
       href: "https://www.facebook.com/profile.php?id=100089286275731",
-      accent: "bg-blue-500",
+      brand: "Facebook",
+      iconStyle: "bg-facebook-blue text-white",
+      accent: "bg-facebook-blue",
+      decoration: "bg-pop-yellow",
     },
     {
       id: "instagram",
@@ -21,7 +24,10 @@ const MediaWindow = () => {
       description: t("media.instagramInfo"),
       icon: faInstagram,
       href: "https://www.instagram.com/depotratoevents/",
-      accent: "bg-roze-500",
+      brand: "Instagram",
+      iconStyle: "bg-gradient-to-br from-instagram-purple via-pop-pink to-pop-yellow text-white",
+      accent: "bg-gradient-to-r from-instagram-purple via-pop-pink to-pop-yellow",
+      decoration: "bg-pop-green",
     },
     {
       id: "tiktok",
@@ -30,7 +36,10 @@ const MediaWindow = () => {
       description: t("media.tiktokInfo"),
       icon: faTiktok,
       href: "https://www.tiktok.com/@depotratoevents",
-      accent: "bg-green-500",
+      brand: "TikTok",
+      iconStyle: "bg-tiktok-black text-pop-blue",
+      accent: "bg-tiktok-black",
+      decoration: "bg-pop-pink",
     },
     {
       id: "x",
@@ -39,45 +48,63 @@ const MediaWindow = () => {
       description: t("media.xInfo"),
       icon: faXTwitter,
       href: "https://x.com/DepotRatoEvents",
+      brand: "X",
+      iconStyle: "bg-green-800 text-white",
       accent: "bg-green-800",
+      decoration: "bg-pop-blue",
     },
   ]
 
   return (
     <main>
-      <section className="bg-green-700 px-5 py-16 text-white sm:px-8 sm:py-24">
+      <section className="relative isolate overflow-hidden bg-green-800 px-5 py-16 text-white sm:px-8 sm:py-20">
+        <div aria-hidden="true" className="absolute -right-20 -top-24 -z-10 h-72 w-72 rounded-full bg-pop-pink/80 blur-3xl" />
+        <div aria-hidden="true" className="absolute -bottom-36 left-1/3 -z-10 h-72 w-72 rounded-full bg-pop-blue/60 blur-3xl" />
         <div className="mx-auto max-w-7xl">
-          <p className="mb-3 font-moonbold text-sm uppercase tracking-[0.2em] text-mint-100">{t("navigation.media")}</p>
-          <h1 className="max-w-3xl font-moon text-4xl uppercase leading-tight sm:text-6xl">{t("media.all")}</h1>
+          <p className="mb-4 inline-flex rounded-full bg-pop-yellow px-4 py-2 font-moonbold text-xs uppercase tracking-[0.2em] text-green-800">
+            {t("navigation.media")}
+          </p>
+          <h1 className="max-w-3xl font-moon text-4xl leading-tight sm:text-6xl">{t("media.all")}</h1>
           <p className="mt-5 max-w-2xl text-base leading-8 text-white/80 sm:text-lg">{t("media.allinfo")}</p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20">
-        <div className="mb-8">
-          <h2 className="font-moon text-2xl text-green-700 sm:text-3xl">{t("media.feed")}</h2>
+      <section className="bg-green-100/30 px-5 py-14 sm:px-8 sm:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-9 max-w-3xl">
+            <p className="mb-2 font-moonbold text-xs uppercase tracking-[0.18em] text-green-500">{t("media.feed")}</p>
+            <h2 className="font-moon text-2xl text-green-700 sm:text-3xl">{t("media.socialTitle")}</h2>
           <p className="mt-2 max-w-2xl leading-7 text-grey-400">{t("media.feedinfo")}</p>
-        </div>
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {channels.map(channel => (
-            <a
-              key={channel.id}
-              href={channel.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex min-h-64 flex-col rounded-3xl border border-green-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-700"
-            >
-              <span className={`mb-6 flex h-14 w-14 items-center justify-center rounded-2xl text-white ${channel.accent}`}>
-                <FontAwesomeIcon icon={channel.icon} className="text-2xl" aria-hidden="true" />
-              </span>
-              <span className="font-moon text-2xl text-green-700">{channel.name}</span>
-              <span className="mt-1 text-sm font-semibold text-teal-300">{channel.handle}</span>
-              <span className="mt-4 flex-1 text-sm leading-6 text-grey-400">{channel.description}</span>
-              <span className="mt-5 font-moonbold text-sm text-green-700 transition group-hover:text-teal-300">
-                {t("media.visitChannel")} <span aria-hidden="true">↗</span>
-              </span>
-            </a>
-          ))}
+          </div>
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {channels.map(channel => (
+              <a
+                key={channel.id}
+                href={channel.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${t("media.visitChannel")}: ${channel.name} (${channel.handle})`}
+                className="group flex min-h-72 flex-col overflow-hidden rounded-3xl border border-green-200 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-700 focus-visible:outline-offset-2"
+              >
+                <span className={`h-2 w-full ${channel.accent}`} aria-hidden="true" />
+                <span className="flex flex-1 flex-col p-6 sm:p-7">
+                  <span className="mb-6 flex items-center justify-between">
+                    <span className={`flex h-16 w-16 items-center justify-center rounded-2xl shadow-sm transition-transform group-hover:rotate-3 group-hover:scale-105 ${channel.iconStyle}`}>
+                      <FontAwesomeIcon icon={channel.icon} className="text-3xl" aria-hidden="true" />
+                    </span>
+                    <span className={`h-3 w-3 rounded-full ${channel.decoration}`} aria-hidden="true" />
+                  </span>
+                  <span className="font-moon text-2xl text-green-800">{channel.name}</span>
+                  <span className="mt-1 text-sm font-semibold text-grey-400">{channel.handle}</span>
+                  <span className="mt-4 flex-1 text-sm leading-6 text-grey-400">{channel.description}</span>
+                  <span className="mt-6 inline-flex min-h-11 items-center gap-2 self-start rounded-full bg-green-100/70 px-4 py-2 font-moonbold text-sm text-green-800 transition group-hover:bg-pop-yellow">
+                    {t("media.visitChannel")}
+                    <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">↗</span>
+                  </span>
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
     </main>
